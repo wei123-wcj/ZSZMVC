@@ -1,0 +1,116 @@
+﻿@model GetAdminRoleAdd
+@{
+    ViewBag.Title = "编辑管理员";
+    Layout = "~/Views/Shared/_LayoutIndex.cshtml";
+}
+<div class="pd-20">
+    <form action="" method="post" class="form form-horizontal" id="form-admin-add">
+        <input type="hidden" class="input-text" value="@Model.GetCity.Id" name="Id" />
+        <div class="row cl">
+            <label class="form-label col-3"><span class="c-red">*</span>手机：</label>
+            <div class="formControls col-5">
+                <input type="text" class="input-text" value="@Model.GetCity.PhoneNum" placeholder="" id="user-tel" name="PhoneNum" datatype="m" nullmsg="手机不能为空">
+            </div>
+            <div class="col-4"> </div>
+        </div>
+        <div class="row cl">
+            <label class="form-label col-3"><span class="c-red">*</span>管理员：</label>
+            <div class="formControls col-5">
+                <input type="text" class="input-text" value="@Model.GetCity.Name" placeholder="" id="user-name" name="Name" datatype="*2-16" nullmsg="用户名不能为空">
+            </div>
+            <div class="col-4"> </div>
+        </div>
+        <div class="row cl">
+            <label class="form-label col-3"><span class="c-red">*</span>初始密码：</label>
+            <div class="formControls col-5">
+                <input type="password" placeholder="密码为空时不修改密码" errormsg="请输入邮箱！" value="" name="Pwd" class="input-text"  >
+            </div>
+            <div class="col-4"> </div>
+        </div>
+        <div class="row cl">
+            <label class="form-label col-3"><span class="c-red">*</span>确认密码：</label>
+            <div class="formControls col-5">
+                <input type="password" placeholder="确认新密码" autocomplete="off" class="input-text Validform_error"  recheck="Pwd" id="newpassword2">
+            </div>
+            <div class="col-4"> </div>
+        </div>
+        <div class="row cl">
+            <label class="form-label col-3"><span class="c-red">*</span>邮箱：</label>
+            <div class="formControls col-5">
+                <input type="text" class="input-text" placeholder="" value="@Model.GetCity.Email" name="email" id="email" datatype="e" nullmsg="请输入邮箱！">
+            </div>
+            <div class="col-4"> </div>
+        </div>
+        <div class="row cl">
+            <label class="form-label col-3"><span class="c-red">*</span>城市：</label>
+            <div class="formControls col-5">
+                @*<select name="CityId" class="input-text">
+                    @for (int i = 0; i < Model.City.Length; i++)
+                    {
+                        <option selected="@(@Convert.ToInt64(@Model.GetCity.CityId)==@Model.City[i].Id) " value="@Model.City[i].Id">@Model.City[i].Name</option>
+                    }
+                </select>*@
+                @Html.DropDownList("CityId", new SelectList(@Model.City, "Id", "Name", @Model.GetCity.CityId), new { @class = "input-text" })
+            </div>
+            <div class="col-4"> </div>
+        </div>
+        <div class="row cl">
+            <label class="form-label col-3"><span class="c-red">*</span>角色：</label>
+            <div class="col-xs-12 col-sm-6">
+                @for (int i = 0; i < Model.Role.Length; i++)
+                {
+                    <input type="checkbox" id="Permission_@Model.Role[i].Id" name="RoleId" value="@Model.Role[i].Id" checked="@Model.GetAdminRole.Select(m=>m.Id).Contains(Model.Role[i].Id)" />
+                    <label for="Permission_@Model.Role[i].Id">@Model.Role[i].Name</label>
+                }
+            </div>
+        </div>
+        <div class="row cl">
+            <div class="col-9 col-offset-3">
+                <input class="btn btn-primary radius" type="button" id="add" value="&nbsp;&nbsp;提交&nbsp;&nbsp;">
+            </div>
+        </div>
+    </form>
+</div>
+@section fontScript
+{
+    <script type="text/javascript">
+$(function(){
+	$('.skin-minimal input').iCheck({
+		checkboxClass: 'icheckbox-blue',
+		radioClass: 'iradio-blue',
+		increaseArea: '20%'
+    });
+    $('#add').click(function () {
+        var data = $('#form-admin-add').serializeArray();
+        $.ajax({
+            url: '/AdminUser/Update',
+            type: 'post',
+            data: data,
+            dataType: "json",
+            success: function (res) {
+            if (res.Statin == "ok") {
+                   layer.msg('修改成功!', { icon: 1, time: 1000 });
+                   window.parent.location.reload();
+                    }
+            else {
+                   layer.msg('修改失败!', { icon: 2, time: 1000 });
+                    }
+            },
+            error: function (org) {
+                layer.msg('服务器异常!', { icon: 2, time: 1000 });
+            }
+        })
+    })
+	$("#form-admin-add").Validform({
+		tiptype:2,
+		callback:function(form){
+			form[0].submit();
+			var index = parent.layer.getFrameIndex(window.name);
+			parent.$('.btn-refresh').click();
+			parent.layer.close(index);
+		}
+	});
+});
+    </script>
+}
+

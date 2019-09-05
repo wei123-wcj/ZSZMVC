@@ -1,0 +1,90 @@
+﻿@model PermissionDTO[]
+@{
+    Layout = "~/Views/Shared/_LayoutIndex.cshtml";
+    ViewBag.Title = "添加角色";
+}
+
+<div class="pd-20">
+    <form class="form form-horizontal" id="form-user-character-add">
+        <div class="row cl">
+            <label class="form-label col-3"><span class="c-red">*</span>角色名称：</label>
+            <div class="formControls col-5">
+                <input type="text" class="input-text" value="" name="Name" datatype="*2-12" nullmsg="角色名称不能为空！" errormsg="可使用3-13位字符！">
+            </div>
+            <div class="col-4"> </div>
+        </div>
+        <div class="row cl">
+            @for (int i = 0; i < Model.Length; i++)
+            {
+                <div class="col-xs-12 col-sm-3">
+                    <input type="checkbox" id="Permission_@Model[i].Id" name="Desid" value="@Model[i].Id" />
+                    <label for="Permission_@Model[i].Id">@Model[i].Name</label>
+                </div>
+            }
+        </div>
+        <div class="row cl">
+            <div class="col-10 col-offset-2">
+                <button type="button" class="btn btn-success radius" id="admin-role-save" name="admin-role-save"><i class="icon-ok"></i> 确定</button>
+            </div>
+        </div>
+    </form>
+</div>
+
+@section fontScript
+{
+<script>
+    $(function () {
+        $(".permission-list dt input:checkbox").click(function () {
+            $(this).closest("dl").find("dd input:checkbox").prop("checked", $(this).prop("checked"));
+        });
+        $(".permission-list2 dd input:checkbox").click(function () {
+            var l = $(this).parent().parent().find("input:checked").length;
+            var l2 = $(this).parents(".permission-list").find(".permission-list2 dd").find("input:checked").length;
+            if ($(this).prop("checked")) {
+                $(this).closest("dl").find("dt input:checkbox").prop("checked", true);
+                $(this).parents(".permission-list").find("dt").first().find("input:checkbox").prop("checked", true);
+            }
+            else {
+                if (l == 0) {
+                    $(this).closest("dl").find("dt input:checkbox").prop("checked", false);
+                }
+                if (l2 == 0) {
+                    $(this).parents(".permission-list").find("dt").first().find("input:checkbox").prop("checked", false);
+                }
+            }
+
+        });
+        $('#admin-role-save').click(function () {
+            var data = $('#form-user-character-add').serializeArray();
+            $.ajax({
+                url: "/AdminRole/Add",
+                type: "post",
+                data: data,
+                dataType: "json",
+                success: function (res) {
+                    if (res == "ok") {
+                        layer.msg('添加成功!', { icon: 1, time: 1000 });
+                        window.parent.location.reload();
+                    }
+                    else {
+                        layer.msg('添加失败!', { icon: 2, time: 1000 });
+                    }
+                },
+                error: function (org) {
+                    layer.msg('服务器异常!', { icon: 2, time: 1000 });
+                }
+            })
+        })
+        $("#form-user-character-add").Validform({
+            tiptype: 2,
+            callback: function (form) {
+                form[0].submit();
+                var index = parent.layer.getFrameIndex(window.name);
+                parent.$('.btn-refresh').click();
+                parent.layer.close(index);
+
+            }
+        });
+    });
+</script>
+    }
