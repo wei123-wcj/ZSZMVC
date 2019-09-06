@@ -27,10 +27,17 @@ namespace ZSZ.Admin.Web.Controllers
         {
             if (ModelState.IsValid)
             {
-                bool i = Logins.Login(adminLogin.PhoneNum, adminLogin.Pwd);
-                if (i)
+                if (adminLogin.Code == Session["code"].ToString())
                 {
-                    return Json(new AjaxReault { Statin = "ok" });
+                    bool i = Logins.Login(adminLogin.PhoneNum, adminLogin.Pwd);
+                    if (i)
+                    {
+                        return Json(new AjaxReault { Statin = "ok" });
+                    }
+                    else
+                    {
+                        return Json(new AjaxReault { Statin = "no" });
+                    }
                 }
                 else
                 {

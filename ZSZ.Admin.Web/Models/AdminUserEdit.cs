@@ -15,8 +15,6 @@ namespace ZSZ.Admin.Web.Models
         [Required]
         [StringLength(11, MinimumLength = 7)]
         public string PhoneNum { get; set; }
-        [Required]
-        [StringLength(18, MinimumLength = 6)]
         public string Pwd { get; set; }
         [Required]
         public string Email { get; set; }

@@ -14,5 +14,7 @@ namespace ZSZ.Admin.Web.Models
         [Required]
         [StringLength(18, MinimumLength = 6)]
         public string Pwd { get; set; }
+        [Required]
+        public string Code { get; set; }
     }
 }
