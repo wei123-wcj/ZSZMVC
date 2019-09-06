@@ -12,7 +12,6 @@ namespace ZSZ.Admin.Web.Controllers
     public class AdminUserController : Controller
     {
         public IAdminUserService UserService { get; set; }
-        public ICityService CityService { get; set; }
         public IRoleService RoleService { get; set; }
         // GET: AdminUser
         [HttpGet]
@@ -30,6 +29,18 @@ namespace ZSZ.Admin.Web.Controllers
         {
             return View(UserService.GetAll().Where(m=>m.Name.Contains(name)).ToArray());
         }
+        public ActionResult GetPhone(string PhoneNum)
+        {
+            bool i = UserService.GetPhone(PhoneNum);
+            if(i)
+            {
+                return Json(new AjaxReault { Statin = "ok" });
+            }
+            else
+            {
+                return Json(new AjaxReault { Statin = "no" });
+            }
+        }
         /// <summary>
         /// 添加
         /// </summary>
@@ -37,7 +48,7 @@ namespace ZSZ.Admin.Web.Controllers
         [HttpGet]
         public ActionResult Add()
         {
-            var city = CityService.GetAll();
+            var city = UserService.GetCities();
             var Role = RoleService.GetAll();
             GetAdminRoleAdd getAdmin = new GetAdminRoleAdd
             {
@@ -69,7 +80,11 @@ namespace ZSZ.Admin.Web.Controllers
         public ActionResult Update(long id)
         {
             var GetUser = UserService.GetById(id);
-            var city = CityService.GetAll();
+            if (GetUser.CityId == null)
+            {
+                GetUser.CityId = 0;
+            }
+            var city = UserService.GetCities();
             var Role = RoleService.GetAll();
             var GetUserRole = RoleService.GetAdminRole(id);
             GetAdminRoleAdd getAdmin = new GetAdminRoleAdd
@@ -84,8 +99,15 @@ namespace ZSZ.Admin.Web.Controllers
         [HttpPost]
         public ActionResult Update(AdminUserEdit AdminUser)
         {
-            UserService.Update(AdminUser.Id,AdminUser.Name,AdminUser.PhoneNum,AdminUser.Pwd,AdminUser.Email,AdminUser.CityId,AdminUser.RoleId);
-            return Json(new AjaxReault { Statin = "ok" });
+            if (ModelState.IsValid)
+            {
+                UserService.Update(AdminUser.Id, AdminUser.Name, AdminUser.PhoneNum, AdminUser.Pwd, AdminUser.Email, AdminUser.CityId, AdminUser.RoleId);
+                return Json(new AjaxReault { Statin = "ok" });
+            }
+            else
+            {
+                return Json(new AjaxReault { Statin = "no" });
+            }
         }
         /// <summary>
         /// 删除

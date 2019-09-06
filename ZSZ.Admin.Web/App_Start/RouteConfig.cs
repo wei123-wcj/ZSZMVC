@@ -14,9 +14,9 @@ namespace ZSZ.Admin.Web
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
 
             routes.MapRoute(
-                name: "AdminRole",
+                name: "Default",
                 url: "{controller}/{action}/{id}",
-                defaults: new { controller = "AdminRole", action = "Index", id = UrlParameter.Optional }
+                defaults: new { controller = "Default", action = "Index", id = UrlParameter.Optional }
             );
         }
     }

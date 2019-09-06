@@ -88,17 +88,42 @@ $(function(){
             dataType: "json",
             success: function (res) {
             if (res.Statin == "ok") {
-                   layer.msg('添加成功!', { icon: 1, time: 1000 });
+                   layer.msg('添加成功!', { icon: 1, time: 2000 });
                    window.parent.location.reload();
                     }
             else {
-                   layer.msg('添加失败!', { icon: 2, time: 1000 });
+                   layer.msg('添加失败!', { icon: 2, time: 2000 });
                     }
             },
             error: function (org) {
-                layer.msg('服务器异常!', { icon: 2, time: 1000 });
+                layer.msg('服务器异常!', { icon: 2, time: 2000 });
             }
         })
+    })
+    function GetPhone() {
+        var data = $('#form-admin-add').serializeArray();
+         $.ajax({
+            url: '/AdminUser/GetPhone',
+            type: 'post',
+            data: data,
+            dataType: "json",
+            success: function (res) {
+            if (res.Statin == "ok") {
+                   layer.msg('该手机号已注册!', { icon: 2, time: 2000 });
+                    }
+            else {
+
+                    }
+            },
+            error: function (org) {
+                layer.msg('服务器异常!', { icon: 2, time: 2000 });
+            }
+         })
+    }
+    $('#user-tel').hover(function () {
+        GetPhone();
+    }).mouseenter(function () {
+       
     })
 	$("#form-admin-add").Validform({
 		tiptype:2,
