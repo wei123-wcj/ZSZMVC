@@ -121,7 +121,6 @@ namespace ZSZ.Service
                     Email = Email,
                     CityId = CityId,
                     LoginErrorTimes = 0,
-                    LastLoginErrorDateTime = DateTime.Now
                 };
                 my.AdminUsers.Add(admin);
                 my.SaveChanges();

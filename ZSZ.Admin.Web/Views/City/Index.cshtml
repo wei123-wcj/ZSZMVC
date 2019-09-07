@@ -1,0 +1,104 @@
+﻿@model CityDTO[]
+@{
+    ViewBag.Title = "城市区域管理";
+    Layout = "~/Views/Shared/_LayoutIndex.cshtml";
+}
+
+<nav class="breadcrumb"><i class="Hui-iconfont">&#xe67f;</i> 首页 <span class="c-gray en">&gt;</span> 管理员管理 <span class="c-gray en">&gt;</span> 角色管理 <a class="btn btn-success radius r mr-20" style="line-height:1.6em;margin-top:3px" href="javascript:location.replace(location.href);" title="刷新"><i class="Hui-iconfont">&#xe68f;</i></a></nav>
+<div class="pd-20">
+    <div class="text-c">
+        <form class="Huiform" method="post" action="/City/Index" target="_self">
+            <input type="text" class="input-text" style="width:250px" placeholder="输入城市名称" id="Cha" name="name">
+            <button type="submit" class="btn btn-success" id="" name=""><i class="Hui-iconfont">&#xe665;</i> 搜权城市</button>
+        </form>
+    </div>
+    <div class="cl pd-5 bg-1 bk-gray mt-20"> <span class="l"> <a href="javascript:;" onclick="datadel()" class="btn btn-danger radius"><i class="Hui-iconfont">&#xe6e2;</i> 批量删除</a> <a class="btn btn-primary radius" href="javascript:;" onclick="admin_role_add('添加城市','/City/Add','800')"><i class="Hui-iconfont">&#xe600;</i> 添加城市</a> </span> <span class="r">共有数据：<strong>@Model.Length</strong> 条</span> </div>
+    <form class="Huiform" id="roleForm" target="_self">
+        <table class="table table-border table-bordered table-hover table-bg">
+            <thead>
+                <tr>
+                    <th scope="col" colspan="6">城市区域管理</th>
+                </tr>
+                <tr class="text-c">
+                    <th width="25"><input type="checkbox" value="" name=""></th>
+                    <th width="150">城市</th>
+                    <th width="150">区域管理</th>
+                    <th width="150">删除</th>
+                    <th width="150">热门搜索管理</th>
+                </tr>
+            </thead>
+            <tbody>
+                @for (int i = 0; i < Model.Length; i++)
+                {
+                <tr class="text-c">
+                    <td><input type="checkbox" value="@Model[i].Id" name="selectIDs"></td>
+                    <td>@Model[i].Name</td>
+                    <td><a>区域管理</a></td>
+                    <td class="f-14"><a title="删除" href="javascript:;" onclick="admin_role_del(this,'@Model[i].Id')" class="ml-5" style="text-decoration:none"><i class="Hui-iconfont">&#xe6e2;</i></a></td>
+                    <td><a>热门搜索管理</a></td>
+                </tr>
+                }
+            </tbody>
+        </table>
+    </form>
+</div>
+@section fontScript{
+    <script type="text/javascript">
+        /*管理员-角色-添加*/
+        function admin_role_add(title, url, w, h) {
+            layer_show(title, url, w, h);
+        }
+        /*管理员-角色-删除*/
+        function admin_role_del(obj, id) {
+            layer.confirm('城市删除须谨慎，确认要删除吗？', function (index) {
+                //此处请求后台程序，下方是成功后的前台处理……
+                var data = { "id": id };
+                $.ajax({
+                    url: "/City/Delete",
+                    type: "post",
+                    data: data,
+                    dataType: "json",
+                    success: function (res) {
+                        if (res.Statin == "ok") {
+                            $(obj).parents("tr").remove();
+                            layer.msg('已删除!', { icon: 1, time: 1000 });
+                            window.location.reload();
+                        }
+                        else {
+                            layer.msg('删除失败!', { icon: 2, time: 1000 });
+                        }
+                    },
+                    error: function (org) {
+                        layer.msg('服务器异常!', { icon: 2, time: 1000 });
+                    }
+                })
+            });
+        }
+        function datadel() {
+            layer.confirm('城市删除须谨慎，确认要删除吗？', function (index) {
+                //此处请求后台程序，下方是成功后的前台处理……
+                // var data=$('#form').serialize();
+                var datForm = $('#roleForm').serializeArray();
+                $.ajax({
+                    url: "/City/DeleteAll",
+                    type: "post",
+                    data: datForm,
+                    dataType: "json",
+                    success: function (res) {
+                        if (res.Statin == "ok") {
+                            layer.msg('已删除!', { icon: 1, time: 1000 });
+                            window.location.reload();
+                        }
+                        else {
+                            layer.msg('删除失败!', { icon: 1, time: 1000 });
+                        }
+                    },
+                    error: function (org) {
+                        layer.msg('服务器异常!', { icon: 1, time: 1000 });
+                    }
+                })
+            });
+        }
+    </script>
+}
+

@@ -47,6 +47,7 @@
     <Compile Include="IPermissionService.cs" />
     <Compile Include="IRoleService.cs" />
     <Compile Include="IServiceSupport.cs" />
+    <Compile Include="ISettingService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

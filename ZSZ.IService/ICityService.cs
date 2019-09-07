@@ -10,5 +10,8 @@ namespace ZSZ.IService
     public interface ICityService : IServiceSupport
     {
          CityDTO[] GetAll();
+         long Insert(string name);
+         bool MarkDeleted(long id);
+         CityDTO GetById(long id);
     }
 }

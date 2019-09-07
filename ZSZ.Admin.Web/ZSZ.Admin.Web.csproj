@@ -1399,6 +1399,7 @@
     <Compile Include="Controllers\AdminUserController.cs" />
     <Compile Include="Controllers\CityController.cs" />
     <Compile Include="Controllers\DefaultController.cs" />
+    <Compile Include="Controllers\SettingController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -1413,11 +1414,13 @@
     <Compile Include="Models\AdminLogin.cs" />
     <Compile Include="Models\AdminUserAdd.cs" />
     <Compile Include="Models\AdminUserEdit.cs" />
+    <Compile Include="Models\CityAddEdit.cs" />
     <Compile Include="Models\GetAdminRoleAdd.cs" />
     <Compile Include="Models\PermissionAdd.cs" />
     <Compile Include="Models\PermissionEdit.cs" />
     <Compile Include="Models\RoleAdd.cs" />
     <Compile Include="Models\RoleEdit.cs" />
+    <Compile Include="Models\SettingAddEdit.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -1530,6 +1533,11 @@
     <Content Include="Views\AdminUser\Update.cshtml" />
     <Content Include="Views\Default\Index.cshtml" />
     <Content Include="Views\Default\Login.cshtml" />
+    <Content Include="Views\City\Index.cshtml" />
+    <Content Include="Views\City\Add.cshtml" />
+    <Content Include="Views\Setting\Index.cshtml" />
+    <Content Include="Views\Setting\Add.cshtml" />
+    <Content Include="Views\Setting\Update.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

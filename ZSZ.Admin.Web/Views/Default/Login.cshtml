@@ -34,22 +34,22 @@
     <div class="header"></div>
     <div class="loginWraper">
         <div id="loginform" class="loginBox">
-            <form class="form form-horizontal" id="from" >
+            <form class="form form-horizontal" id="from">
                 <div class="row cl">
                     <label class="form-label col-3"><i class="Hui-iconfont">&#xe60d;</i></label>
                     <div class="formControls col-8">
-                        <input id="" name="PhoneNum" type="text" placeholder="手机号" class="input-text size-L">
+                        <input id="" name="PhoneNum" type="text" placeholder="手机号" class="input-text size-L" datatype="m" nullmsg="请填写手机号">
                     </div>
                 </div>
                 <div class="row cl">
                     <label class="form-label col-3"><i class="Hui-iconfont">&#xe60e;</i></label>
                     <div class="formControls col-8">
-                        <input id="" name="pwd" type="password" placeholder="密码" class="input-text size-L">
+                        <input id="" name="pwd" type="password" placeholder="密码" class="input-text size-L" datatype="*6-20" nullmsg="请填写密码">
                     </div>
                 </div>
                 <div class="row cl">
                     <div class="formControls col-8 col-offset-3">
-                        <input class="input-text size-L" type="text" name="Code" placeholder="验证码" onblur="if(this.value==''){this.value='验证码:'}" onclick="if(this.value=='验证码:'){this.value='';}" value="验证码:" style="width:150px;">
+                        <input class="input-text size-L" type="text" name="Code" placeholder="验证码" onblur="if(this.value==''){this.value='验证码:'}" onclick="if(this.value=='验证码:'){this.value='';}" value="验证码:" datatype="*" nullmsg="请填写验证码" style="width:150px;">
                         <img id="Validata" src="~/ashx/ValidateCode.ashx"> <a id="kanbuq" href="javascript:;">看不清，换一张</a>
                     </div>
                 </div>
@@ -72,55 +72,66 @@
     </div>
     <div class="footer">Copyright 你的公司名称 by H-ui.admin.v2.3</div>
     <script type="text/javascript" src="~/lib/jquery/1.9.1/jquery.min.js"></script>
+    <script src="~/lib/Validform/5.3.2/Validform.min.js"></script>
     <script type="text/javascript" src="~/js/H-ui.js"></script>
     <script>
     $(function () {
-        $('#kanbuq').click(function () {
-              $('#Validata').attr('src', '/ashx/ValidateCode.ashx?_=' + Math.random());
-        })
-        $('#Validata').click(function () {
-            $('#Validata').attr('src', '/ashx/ValidateCode.ashx?_=' + Math.random());
-        }).mouseover(function () {
+            $("#from").Validform();
+            //$("#from").Validform({
+            //    //tiptype: 2,
+            //    //callback: function (form) {
+            //    //    form[0].submit();
+            //    //    var index = parent.layer.getFrameIndex(window.name);
+            //    //    parent.$('.btn-refresh').click();
+            //    //    parent.layer.close(index);
+            //    //}
+            //});
+            $('#kanbuq').click(function () {
+                $('#Validata').attr('src', '/ashx/ValidateCode.ashx?_=' + Math.random());
+            })
+            $('#Validata').click(function () {
+                $('#Validata').attr('src', '/ashx/ValidateCode.ashx?_=' + Math.random());
+            }).mouseover(function () {
                 $(this).attr('cursor', 'pointer');
             })
-         //$('#img1').mouseover(function () {
-         //       $(this).attr('cursor', 'pointer');
-         //   })
+            //$('#img1').mouseover(function () {
+            //       $(this).attr('cursor', 'pointer');
+            //   })
 
-        $('#login').click(function () {
-            var data = $('#from').serializeArray();
-             $.ajax({
-            url: '/Default/Login',
-            type: 'post',
-            data: data,
-            dataType: "json",
-            success: function (res) {
-                if (res.Statin == "ok") {
-                    alert('欢迎登陆成功!');
-                //layer.msg('欢迎登陆成功!', { icon: 1, time: 2000 });
-                window.location.href = '/Default/Index';
+            $('#login').click(function () {
+                var data = $('#from').serializeArray();
+                $.ajax({
+                    url: '/Default/Login',
+                    type: 'post',
+                    data: data,
+                    dataType: "json",
+                    success: function (res) {
+                        if (res.Statin == "ok") {
+                            alert('欢迎登陆成功!');
+                            //layer.msg('欢迎登陆成功!', { icon: 1, time: 2000 });
+                            window.location.href = '/Default/Index';
+                        }
+                        else {
+                            alert('抱歉登陆失败!');
+                            // layer.msg('抱歉登陆失败!', { icon: 2, time: 2000 });
+                        }
+                    },
+                    error: function (org) {
+                        alert('服务器异常!');
+                        //layer.msg('服务器异常!', { icon: 2, time: 2000 });
                     }
-                else {
-                    alert('抱歉登陆失败!');
-                // layer.msg('抱歉登陆失败!', { icon: 2, time: 2000 });
-                    }
-            },
-                 error: function (org) {
-                  alert('服务器异常!');
-                //layer.msg('服务器异常!', { icon: 2, time: 2000 });
-            }
-         })
+                })
+            })
         })
-    })
-var _hmt = _hmt || [];
-(function() {
-  var hm = document.createElement("script");
-  hm.src = "//hm.baidu.com/hm.js?080836300300be57b7f34f4b3e97d911";
-  var s = document.getElementsByTagName("script")[0];
-  s.parentNode.insertBefore(hm, s);
-})();
-var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
-document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F080836300300be57b7f34f4b3e97d911' type='text/javascript'%3E%3C/script%3E"));
+        var _hmt = _hmt || [];
+        (function () {
+            var hm = document.createElement("script");
+            hm.src = "//hm.baidu.com/hm.js?080836300300be57b7f34f4b3e97d911";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+        var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+        document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F080836300300be57b7f34f4b3e97d911' type='text/javascript'%3E%3C/script%3E"));
     </script>
 </body>
 </html>

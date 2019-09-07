@@ -22,8 +22,6 @@
                         <tr class="text-c">
                             <th width="25"><input type="checkbox" value="" name=""></th>
                             <th width="200">角色名</th>
-                            @*<th>用户列表</th>
-                    <th width="300">描述</th>*@
                             <th width="70">操作</th>
                         </tr>
                     </thead>
@@ -33,7 +31,7 @@
                             <tr class="text-c">
                                 <td><input type="checkbox" value="@Model[i].Id" name="selectIDs"></td>
                                 <td>@Model[i].Name</td>
-                                <td class="f-14"><a title="编辑" href="javascript:;" onclick="admin_role_edit('角色编辑','/AdminRole/Update/@Model[i].Id','@Model[i].Id')" style="text-decoration:none"><i class="Hui-iconfont">&#xe6df;</i></a> <a title="删除" href="javascript:;" onclick="admin_role_del(this,'@Model[i].Id')" class="ml-5" style="text-decoration:none"><i class="Hui-iconfont">&#xe6e2;</i></a></td>
+                                <td class="f-14"><a title="编辑" href="javascript:;" onclick="admin_role_edit('角色编辑','/AdminRole/Update/@Model[i].Id','@Model[i].Id')" style="text-decoration:none"><i class="Hui-iconfont">&#xe6df;</i></a><a title="删除" href="javascript:;" onclick="admin_role_del(this,'@Model[i].Id')" class="ml-5" style="text-decoration:none"><i class="Hui-iconfont">&#xe6e2;</i></a></td>
                             </tr>
                         }
                     </tbody>

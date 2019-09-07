@@ -29,6 +29,11 @@ namespace ZSZ.Admin.Web.Controllers
         {
             return View(UserService.GetAll().Where(m=>m.Name.Contains(name)).ToArray());
         }
+        /// <summary>
+        /// 查询手机号是否被注册
+        /// </summary>
+        /// <param name="PhoneNum"></param>
+        /// <returns></returns>
         public ActionResult GetPhone(string PhoneNum)
         {
             bool i = UserService.GetPhone(PhoneNum);

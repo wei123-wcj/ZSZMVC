@@ -22,7 +22,7 @@ namespace ZSZ.Service
                 log.DebugFormat("EF开始执行sql语句{0}", sql);
             };
             //只要数据库建造好后，就加上这句话，禁止Ef再去帮你创建数据库的一些操作
-             //Database.SetInitializer<MyContext>(null);
+             Database.SetInitializer<MyContext>(null);
         }
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
