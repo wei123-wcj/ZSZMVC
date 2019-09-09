@@ -12,7 +12,8 @@ namespace ZSZ.IService
         AdminUserDTO[] GetAll();
         AdminUserDTO GetById(long id);
         CityDTO[] GetCities();
-        bool GetPhone(string PhoneNum);
+        long GetPhoneUpdate(string PhoneNum);
+        bool GetPhoneAdd(string PhoneNum);
         bool MarkDeleted(long id);
         void Insert(string name,string PhoneNum,string Pwd,string Email,long? CityId,long[] RoleId);
         void Update(long id,string name, string PhoneNum, string Pwd, string Email, long? CityId, long[] RoleId);

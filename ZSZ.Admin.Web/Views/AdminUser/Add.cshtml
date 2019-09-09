@@ -103,16 +103,17 @@ $(function(){
     function GetPhone() {
         var data = $('#form-admin-add').serializeArray();
          $.ajax({
-            url: '/AdminUser/GetPhone',
+            url: '/AdminUser/GetPhoneAdd',
             type: 'post',
             data: data,
             dataType: "json",
             success: function (res) {
-            if (res.Statin == "ok") {
+                if (res.Statin == "ok") {
+                    $('#add').attr('disabled','disabled');
                    layer.msg('该手机号已注册!', { icon: 2, time: 2000 });
                     }
             else {
-
+                     $('#add').removeAttr("disabled");
                     }
             },
             error: function (org) {
@@ -120,18 +121,16 @@ $(function(){
             }
          })
     }
-    $('#user-tel').hover(function () {
+    $('#user-tel').blur(function () {
         GetPhone();
-    }).mouseenter(function () {
-       
-    })
+    });
 	$("#form-admin-add").Validform({
 		tiptype:2,
 		callback:function(form){
-			form[0].submit();
-			var index = parent.layer.getFrameIndex(window.name);
-			parent.$('.btn-refresh').click();
-			parent.layer.close(index);
+		//	form[0].submit();
+		//	var index = parent.layer.getFrameIndex(window.name);
+		//	parent.$('.btn-refresh').click();
+		//	parent.layer.close(index);
 		}
 	});
 });

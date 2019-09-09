@@ -34,10 +34,22 @@ namespace ZSZ.Admin.Web.Controllers
         /// </summary>
         /// <param name="PhoneNum"></param>
         /// <returns></returns>
-        public ActionResult GetPhone(string PhoneNum)
+        public ActionResult GetPhone(string PhoneNum,long adminId)
         {
-            bool i = UserService.GetPhone(PhoneNum);
-            if(i)
+            long i = UserService.GetPhoneUpdate(PhoneNum);
+            if(adminId==i)
+            {
+                return Json(new AjaxReault { Statin = "ok" });
+            }
+            else
+            {
+                return Json(new AjaxReault { Statin = "no" });
+            }
+        }
+        public ActionResult GetPhoneAdd(string PhoneNum)
+        {
+            bool i = UserService.GetPhoneAdd(PhoneNum);
+            if (i)
             {
                 return Json(new AjaxReault { Statin = "ok" });
             }
@@ -67,8 +79,16 @@ namespace ZSZ.Admin.Web.Controllers
         {
             if (ModelState.IsValid)
             {
-                UserService.Insert(UserAdd.Name, UserAdd.PhoneNum, UserAdd.Pwd, UserAdd.Email, UserAdd.CityId, UserAdd.RoleId);
-                return Json(new AjaxReault { Statin = "ok"} );
+                bool a=  UserService.GetPhoneAdd(UserAdd.PhoneNum);
+                if (a)
+                {
+                    UserService.Insert(UserAdd.Name, UserAdd.PhoneNum, UserAdd.Pwd, UserAdd.Email, UserAdd.CityId, UserAdd.RoleId);
+                    return Json(new AjaxReault { Statin = "ok" });
+                }
+                else
+                {
+                    return Json(new AjaxReault { Statin = "no" });
+                }
             }
             else
             {
@@ -106,8 +126,16 @@ namespace ZSZ.Admin.Web.Controllers
         {
             if (ModelState.IsValid)
             {
-                UserService.Update(AdminUser.Id, AdminUser.Name, AdminUser.PhoneNum, AdminUser.Pwd, AdminUser.Email, AdminUser.CityId, AdminUser.RoleId);
-                return Json(new AjaxReault { Statin = "ok" });
+                var a = UserService.GetPhoneUpdate(AdminUser.PhoneNum);
+                if(a!=0)
+                {
+                    UserService.Update(AdminUser.Id, AdminUser.Name, AdminUser.PhoneNum, AdminUser.Pwd, AdminUser.Email, AdminUser.CityId, AdminUser.RoleId);
+                    return Json(new AjaxReault { Statin = "ok" });
+                }
+                else
+                {
+                    return Json(new AjaxReault { Statin = "no" });
+                }
             }
             else
             {

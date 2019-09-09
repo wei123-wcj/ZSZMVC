@@ -3,13 +3,14 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Data.Entity;
 using ZSZ.Common;
 using ZSZ.DTO;
 using ZSZ.IService;
 
 namespace ZSZ.Service
 {
-   public class AdminUserService : IAdminUserService
+    public class AdminUserService : IAdminUserService
     {
         /// <summary>
         /// 获取全部数据
@@ -17,10 +18,10 @@ namespace ZSZ.Service
         /// <returns></returns>
         public AdminUserDTO[] GetAll()
         {
-            using (MyContext my=new MyContext())
+            using (MyContext my = new MyContext())
             {
                 BaseService<AdminUserEntity> bs = new BaseService<AdminUserEntity>(my);
-                return bs.GetAll().ToList().Select(m => ToDto(m)).ToArray();
+                return bs.GetAll().AsNoTracking().Include(m => m.City).ToList().Select(m => ToDto(m)).ToArray();
             }
         }
         /// <summary>
@@ -44,7 +45,7 @@ namespace ZSZ.Service
         /// <returns></returns>
         public AdminUserDTO ToDto(AdminUserEntity am)
         {
-            if(am.CityId==null)
+            if (am.CityId == null)
             {
                 am.CityId = 0;
                 CityEntity adminUser = new CityEntity
@@ -106,7 +107,7 @@ namespace ZSZ.Service
         {
             using (MyContext my = new MyContext())
             {
-                if(CityId==0)
+                if (CityId == 0)
                 {
                     CityId = null;
                 }
@@ -117,15 +118,15 @@ namespace ZSZ.Service
                     Name = name,
                     PhoneNum = PhoneNum,
                     PasswordHash = alit,
-                    PasswordSalt = CommonHelper.CalcMD5(Pwd+alit),
+                    PasswordSalt = CommonHelper.CalcMD5(Pwd + alit),
                     Email = Email,
                     CityId = CityId,
                     LoginErrorTimes = 0,
                 };
                 my.AdminUsers.Add(admin);
                 my.SaveChanges();
-                var data= Admins.GetById(admin.Id);
-                if(data==null)
+                var data = Admins.GetById(admin.Id);
+                if (data == null)
                 {
                     throw new Exception("不存在Id为" + admin.Id + "的用户");
                 }
@@ -151,15 +152,15 @@ namespace ZSZ.Service
         /// <param name="Email"></param>
         /// <param name="CityId"></param>
         /// <param name="RoleId"></param>
-        public void Update(long id,string name, string PhoneNum, string Pwd, string Email, long? CityId, long[] RoleId)
+        public void Update(long id, string name, string PhoneNum, string Pwd, string Email, long? CityId, long[] RoleId)
         {
-            using (MyContext my=new MyContext())
+            using (MyContext my = new MyContext())
             {
                 BaseService<AdminUserEntity> user = new BaseService<AdminUserEntity>(my);
                 var data = user.GetById(id);
                 if (data == null)
                 {
-                    throw new Exception("不存在Id为" +id + "的用户");
+                    throw new Exception("不存在Id为" + id + "的用户");
                 }
                 else
                 {
@@ -176,7 +177,7 @@ namespace ZSZ.Service
                         data.PasswordSalt = CommonHelper.CalcMD5(Pwd + salt);
                     }
                     data.Email = Email;
-                    if(CityId==0)
+                    if (CityId == 0)
                     {
                         data.CityId = null;
                     }
@@ -200,12 +201,21 @@ namespace ZSZ.Service
         /// </summary>
         /// <param name="PhoneNum"></param>
         /// <returns></returns>
-        public bool GetPhone(string PhoneNum)
+        public bool GetPhoneAdd(string PhoneNum)
         {
-            using (MyContext my=new MyContext())
+            using (MyContext my = new MyContext())
             {
                 BaseService<AdminUserEntity> user = new BaseService<AdminUserEntity>(my);
                 return user.GetAll().ToList().Select(m => m.PhoneNum).Contains(PhoneNum);
+            }
+        }
+        public long GetPhoneUpdate(string PhoneNum)
+        {
+            using (MyContext my = new MyContext())
+            {
+                BaseService<AdminUserEntity> user = new BaseService<AdminUserEntity>(my);
+                var a = user.GetAll().AsNoTracking().Include(m=>m.City).ToArray().Select(m => ToDto(m)).FirstOrDefault(m => m.PhoneNum == PhoneNum);
+                return a.Id;
             }
         }
     }
