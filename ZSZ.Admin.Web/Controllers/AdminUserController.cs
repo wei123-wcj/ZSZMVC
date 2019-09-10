@@ -30,7 +30,7 @@ namespace ZSZ.Admin.Web.Controllers
             return View(UserService.GetAll().Where(m=>m.Name.Contains(name)).ToArray());
         }
         /// <summary>
-        /// 查询手机号是否被注册
+        /// 查询修改时手机号是否被注册
         /// </summary>
         /// <param name="PhoneNum"></param>
         /// <returns></returns>
@@ -46,6 +46,11 @@ namespace ZSZ.Admin.Web.Controllers
                 return Json(new AjaxReault { Statin = "no" });
             }
         }
+        /// <summary>
+        /// 查询添加时手机号是否被注册
+        /// </summary>
+        /// <param name="PhoneNum"></param>
+        /// <returns></returns>
         public ActionResult GetPhoneAdd(string PhoneNum)
         {
             bool i = UserService.GetPhoneAdd(PhoneNum);

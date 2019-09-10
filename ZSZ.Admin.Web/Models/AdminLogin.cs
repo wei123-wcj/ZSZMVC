@@ -9,7 +9,7 @@ namespace ZSZ.Admin.Web.Models
     public class AdminLogin
     {
         [Required]
-        [StringLength(11, MinimumLength = 7)]
+        [Phone]
         public string PhoneNum { get; set; }
         [Required]
         [StringLength(18, MinimumLength = 6)]

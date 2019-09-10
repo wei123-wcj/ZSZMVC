@@ -12,5 +12,6 @@ namespace ZSZ.Common
         /// 
         /// </summary>
         public string Statin { get; set; }
+        public string Msg { get; set; }
     }
 }

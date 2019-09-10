@@ -1,0 +1,2010 @@
+2019-09-10 13:48:09,936 [78] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句Opened connection at 2019/9/10/周二 13:48:09 +08:00
+
+2019-09-10 13:48:14,182 [78] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句SELECT 
+    [Extent1].[LoginErrorTimes] AS [LoginErrorTimes], 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[Name] AS [Name], 
+    [Extent1].[PhoneNum] AS [PhoneNum], 
+    [Extent1].[PasswordHash] AS [PasswordHash], 
+    [Extent1].[PasswordSalt] AS [PasswordSalt], 
+    [Extent1].[Email] AS [Email], 
+    [Extent1].[CityId] AS [CityId], 
+    [Extent1].[LastLoginErrorDateTime] AS [LastLoginErrorDateTime], 
+    [Extent1].[CreateDateTime] AS [CreateDateTime], 
+    [Extent1].[IsDeleted] AS [IsDeleted], 
+    [Extent2].[Id] AS [Id1], 
+    [Extent2].[Name] AS [Name1], 
+    [Extent2].[CreateDateTime] AS [CreateDateTime1], 
+    [Extent2].[IsDeleted] AS [IsDeleted1]
+    FROM  [dbo].[T_AdminUsers] AS [Extent1]
+    LEFT OUTER JOIN [dbo].[T_Cities] AS [Extent2] ON [Extent1].[CityId] = [Extent2].[Id]
+    WHERE 0 = [Extent1].[IsDeleted]
+2019-09-10 13:48:14,183 [78] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句
+
+2019-09-10 13:48:14,183 [78] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句-- Executing at 2019/9/10/周二 13:48:14 +08:00
+
+2019-09-10 13:48:16,494 [78] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句-- Completed in 2308 ms with result: SqlDataReader
+
+2019-09-10 13:48:16,494 [78] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句
+
+2019-09-10 13:48:16,706 [78] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句Closed connection at 2019/9/10/周二 13:48:16 +08:00
+
+2019-09-10 13:54:19,611 [75] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句Opened connection at 2019/9/10/周二 13:54:19 +08:00
+
+2019-09-10 13:54:19,620 [75] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句SELECT 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[Name] AS [Name], 
+    [Extent1].[CreateDateTime] AS [CreateDateTime], 
+    [Extent1].[IsDeleted] AS [IsDeleted]
+    FROM [dbo].[T_Cities] AS [Extent1]
+    WHERE 0 = [Extent1].[IsDeleted]
+2019-09-10 13:54:19,620 [75] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句
+
+2019-09-10 13:54:19,620 [75] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句-- Executing at 2019/9/10/周二 13:54:19 +08:00
+
+2019-09-10 13:54:20,611 [75] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句-- Completed in 990 ms with result: SqlDataReader
+
+2019-09-10 13:54:20,611 [75] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句
+
+2019-09-10 13:54:20,681 [75] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句Closed connection at 2019/9/10/周二 13:54:20 +08:00
+
+2019-09-10 13:54:20,704 [75] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句Opened connection at 2019/9/10/周二 13:54:20 +08:00
+
+2019-09-10 13:54:20,730 [75] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句SELECT 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[Name] AS [Name], 
+    [Extent1].[CreateDateTime] AS [CreateDateTime], 
+    [Extent1].[IsDeleted] AS [IsDeleted]
+    FROM [dbo].[T_Roles] AS [Extent1]
+    WHERE 0 = [Extent1].[IsDeleted]
+2019-09-10 13:54:20,730 [75] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句
+
+2019-09-10 13:54:20,731 [75] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句-- Executing at 2019/9/10/周二 13:54:20 +08:00
+
+2019-09-10 13:54:20,887 [75] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句-- Completed in 156 ms with result: SqlDataReader
+
+2019-09-10 13:54:20,887 [75] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句
+
+2019-09-10 13:54:20,888 [75] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句Closed connection at 2019/9/10/周二 13:54:20 +08:00
+
+2019-09-10 13:54:20,893 [75] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句Opened connection at 2019/9/10/周二 13:54:20 +08:00
+
+2019-09-10 13:54:20,912 [75] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句SELECT 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[Description] AS [Description], 
+    [Extent1].[Name] AS [Name], 
+    [Extent1].[CreateDateTime] AS [CreateDateTime], 
+    [Extent1].[IsDeleted] AS [IsDeleted]
+    FROM [dbo].[T_Permissions] AS [Extent1]
+    WHERE 0 = [Extent1].[IsDeleted]
+2019-09-10 13:54:20,912 [75] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句
+
+2019-09-10 13:54:20,912 [75] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句-- Executing at 2019/9/10/周二 13:54:20 +08:00
+
+2019-09-10 13:54:21,069 [75] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句-- Completed in 156 ms with result: SqlDataReader
+
+2019-09-10 13:54:21,069 [75] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句
+
+2019-09-10 13:54:21,070 [75] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句Closed connection at 2019/9/10/周二 13:54:21 +08:00
+
+2019-09-10 13:54:21,073 [75] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句Opened connection at 2019/9/10/周二 13:54:21 +08:00
+
+2019-09-10 13:54:21,074 [75] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句SELECT 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[Description] AS [Description], 
+    [Extent1].[Name] AS [Name], 
+    [Extent1].[CreateDateTime] AS [CreateDateTime], 
+    [Extent1].[IsDeleted] AS [IsDeleted]
+    FROM [dbo].[T_Permissions] AS [Extent1]
+    WHERE 0 = [Extent1].[IsDeleted]
+2019-09-10 13:54:21,074 [75] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句
+
+2019-09-10 13:54:21,074 [75] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句-- Executing at 2019/9/10/周二 13:54:21 +08:00
+
+2019-09-10 13:54:21,077 [75] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句-- Completed in 1 ms with result: SqlDataReader
+
+2019-09-10 13:54:21,077 [75] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句
+
+2019-09-10 13:54:21,077 [75] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句Closed connection at 2019/9/10/周二 13:54:21 +08:00
+
+2019-09-10 13:54:21,078 [75] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句Opened connection at 2019/9/10/周二 13:54:21 +08:00
+
+2019-09-10 13:54:21,078 [75] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句SELECT 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[Description] AS [Description], 
+    [Extent1].[Name] AS [Name], 
+    [Extent1].[CreateDateTime] AS [CreateDateTime], 
+    [Extent1].[IsDeleted] AS [IsDeleted]
+    FROM [dbo].[T_Permissions] AS [Extent1]
+    WHERE 0 = [Extent1].[IsDeleted]
+2019-09-10 13:54:21,078 [75] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句
+
+2019-09-10 13:54:21,078 [75] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句-- Executing at 2019/9/10/周二 13:54:21 +08:00
+
+2019-09-10 13:54:21,079 [75] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句-- Completed in 0 ms with result: SqlDataReader
+
+2019-09-10 13:54:21,079 [75] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句
+
+2019-09-10 13:54:21,079 [75] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句Closed connection at 2019/9/10/周二 13:54:21 +08:00
+
+2019-09-10 13:54:21,080 [75] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句Opened connection at 2019/9/10/周二 13:54:21 +08:00
+
+2019-09-10 13:54:21,080 [75] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句SELECT 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[Description] AS [Description], 
+    [Extent1].[Name] AS [Name], 
+    [Extent1].[CreateDateTime] AS [CreateDateTime], 
+    [Extent1].[IsDeleted] AS [IsDeleted]
+    FROM [dbo].[T_Permissions] AS [Extent1]
+    WHERE 0 = [Extent1].[IsDeleted]
+2019-09-10 13:54:21,080 [75] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句
+
+2019-09-10 13:54:21,080 [75] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句-- Executing at 2019/9/10/周二 13:54:21 +08:00
+
+2019-09-10 13:54:21,081 [75] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句-- Completed in 0 ms with result: SqlDataReader
+
+2019-09-10 13:54:21,081 [75] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句
+
+2019-09-10 13:54:21,081 [75] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句Closed connection at 2019/9/10/周二 13:54:21 +08:00
+
+2019-09-10 13:54:23,812 [50] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句Opened connection at 2019/9/10/周二 13:54:23 +08:00
+
+2019-09-10 13:54:23,825 [50] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句SELECT 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[Name] AS [Name], 
+    [Extent1].[PhoneNum] AS [PhoneNum], 
+    [Extent1].[PasswordHash] AS [PasswordHash], 
+    [Extent1].[PasswordSalt] AS [PasswordSalt], 
+    [Extent1].[Email] AS [Email], 
+    [Extent1].[CityId] AS [CityId], 
+    [Extent1].[LoginErrorTimes] AS [LoginErrorTimes], 
+    [Extent1].[LastLoginErrorDateTime] AS [LastLoginErrorDateTime], 
+    [Extent1].[CreateDateTime] AS [CreateDateTime], 
+    [Extent1].[IsDeleted] AS [IsDeleted]
+    FROM [dbo].[T_AdminUsers] AS [Extent1]
+    WHERE 0 = [Extent1].[IsDeleted]
+2019-09-10 13:54:23,825 [50] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句
+
+2019-09-10 13:54:23,825 [50] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句-- Executing at 2019/9/10/周二 13:54:23 +08:00
+
+2019-09-10 13:54:23,952 [50] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句-- Completed in 138 ms with result: SqlDataReader
+
+2019-09-10 13:54:23,952 [50] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句
+
+2019-09-10 13:54:23,998 [50] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句Closed connection at 2019/9/10/周二 13:54:23 +08:00
+
+2019-09-10 13:54:28,696 [93] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句Opened connection at 2019/9/10/周二 13:54:28 +08:00
+
+2019-09-10 13:54:28,806 [93] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句SELECT TOP (1) 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[Name] AS [Name], 
+    [Extent1].[PhoneNum] AS [PhoneNum], 
+    [Extent1].[PasswordHash] AS [PasswordHash], 
+    [Extent1].[PasswordSalt] AS [PasswordSalt], 
+    [Extent1].[Email] AS [Email], 
+    [Extent1].[CityId] AS [CityId], 
+    [Extent1].[LoginErrorTimes] AS [LoginErrorTimes], 
+    [Extent1].[LastLoginErrorDateTime] AS [LastLoginErrorDateTime], 
+    [Extent1].[CreateDateTime] AS [CreateDateTime], 
+    [Extent1].[IsDeleted] AS [IsDeleted]
+    FROM [dbo].[T_AdminUsers] AS [Extent1]
+    WHERE (0 = [Extent1].[IsDeleted]) AND ([Extent1].[Id] = @p__linq__0)
+2019-09-10 13:54:28,806 [93] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句
+
+2019-09-10 13:54:28,827 [93] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句-- p__linq__0: '11' (Type = Int64, IsNullable = false)
+
+2019-09-10 13:54:28,827 [93] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句-- Executing at 2019/9/10/周二 13:54:28 +08:00
+
+2019-09-10 13:54:29,264 [93] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句-- Completed in 436 ms with result: SqlDataReader
+
+2019-09-10 13:54:29,265 [93] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句
+
+2019-09-10 13:54:29,265 [93] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句Closed connection at 2019/9/10/周二 13:54:29 +08:00
+
+2019-09-10 13:54:29,278 [93] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句Opened connection at 2019/9/10/周二 13:54:29 +08:00
+
+2019-09-10 13:54:29,321 [93] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句SELECT 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[Name] AS [Name], 
+    [Extent1].[CreateDateTime] AS [CreateDateTime], 
+    [Extent1].[IsDeleted] AS [IsDeleted]
+    FROM [dbo].[T_Cities] AS [Extent1]
+    WHERE [Extent1].[Id] = @EntityKeyValue1
+2019-09-10 13:54:29,321 [93] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句
+
+2019-09-10 13:54:29,321 [93] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句-- EntityKeyValue1: '6' (Type = Int64)
+
+2019-09-10 13:54:29,321 [93] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句-- Executing at 2019/9/10/周二 13:54:29 +08:00
+
+2019-09-10 13:54:29,334 [93] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句-- Completed in 12 ms with result: SqlDataReader
+
+2019-09-10 13:54:29,334 [93] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句
+
+2019-09-10 13:54:29,340 [93] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句Closed connection at 2019/9/10/周二 13:54:29 +08:00
+
+2019-09-10 13:54:29,344 [93] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句Opened connection at 2019/9/10/周二 13:54:29 +08:00
+
+2019-09-10 13:54:29,345 [93] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句SELECT 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[Name] AS [Name], 
+    [Extent1].[CreateDateTime] AS [CreateDateTime], 
+    [Extent1].[IsDeleted] AS [IsDeleted]
+    FROM [dbo].[T_Cities] AS [Extent1]
+    WHERE 0 = [Extent1].[IsDeleted]
+2019-09-10 13:54:29,345 [93] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句
+
+2019-09-10 13:54:29,345 [93] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句-- Executing at 2019/9/10/周二 13:54:29 +08:00
+
+2019-09-10 13:54:29,345 [93] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句-- Completed in 0 ms with result: SqlDataReader
+
+2019-09-10 13:54:29,345 [93] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句
+
+2019-09-10 13:54:29,345 [93] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句Closed connection at 2019/9/10/周二 13:54:29 +08:00
+
+2019-09-10 13:54:29,346 [93] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句Opened connection at 2019/9/10/周二 13:54:29 +08:00
+
+2019-09-10 13:54:29,346 [93] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句SELECT 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[Name] AS [Name], 
+    [Extent1].[CreateDateTime] AS [CreateDateTime], 
+    [Extent1].[IsDeleted] AS [IsDeleted]
+    FROM [dbo].[T_Roles] AS [Extent1]
+    WHERE 0 = [Extent1].[IsDeleted]
+2019-09-10 13:54:29,346 [93] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句
+
+2019-09-10 13:54:29,346 [93] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句-- Executing at 2019/9/10/周二 13:54:29 +08:00
+
+2019-09-10 13:54:29,346 [93] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句-- Completed in 0 ms with result: SqlDataReader
+
+2019-09-10 13:54:29,346 [93] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句
+
+2019-09-10 13:54:29,346 [93] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句Closed connection at 2019/9/10/周二 13:54:29 +08:00
+
+2019-09-10 13:54:29,346 [93] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句Opened connection at 2019/9/10/周二 13:54:29 +08:00
+
+2019-09-10 13:54:29,347 [93] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句SELECT 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[Description] AS [Description], 
+    [Extent1].[Name] AS [Name], 
+    [Extent1].[CreateDateTime] AS [CreateDateTime], 
+    [Extent1].[IsDeleted] AS [IsDeleted]
+    FROM [dbo].[T_Permissions] AS [Extent1]
+    WHERE 0 = [Extent1].[IsDeleted]
+2019-09-10 13:54:29,347 [93] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句
+
+2019-09-10 13:54:29,347 [93] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句-- Executing at 2019/9/10/周二 13:54:29 +08:00
+
+2019-09-10 13:54:29,347 [93] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句-- Completed in 0 ms with result: SqlDataReader
+
+2019-09-10 13:54:29,347 [93] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句
+
+2019-09-10 13:54:29,347 [93] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句Closed connection at 2019/9/10/周二 13:54:29 +08:00
+
+2019-09-10 13:54:29,347 [93] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句Opened connection at 2019/9/10/周二 13:54:29 +08:00
+
+2019-09-10 13:54:29,347 [93] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句SELECT 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[Description] AS [Description], 
+    [Extent1].[Name] AS [Name], 
+    [Extent1].[CreateDateTime] AS [CreateDateTime], 
+    [Extent1].[IsDeleted] AS [IsDeleted]
+    FROM [dbo].[T_Permissions] AS [Extent1]
+    WHERE 0 = [Extent1].[IsDeleted]
+2019-09-10 13:54:29,347 [93] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句
+
+2019-09-10 13:54:29,347 [93] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句-- Executing at 2019/9/10/周二 13:54:29 +08:00
+
+2019-09-10 13:54:29,348 [93] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句-- Completed in 0 ms with result: SqlDataReader
+
+2019-09-10 13:54:29,348 [93] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句
+
+2019-09-10 13:54:29,348 [93] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句Closed connection at 2019/9/10/周二 13:54:29 +08:00
+
+2019-09-10 13:54:29,348 [93] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句Opened connection at 2019/9/10/周二 13:54:29 +08:00
+
+2019-09-10 13:54:29,348 [93] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句SELECT 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[Description] AS [Description], 
+    [Extent1].[Name] AS [Name], 
+    [Extent1].[CreateDateTime] AS [CreateDateTime], 
+    [Extent1].[IsDeleted] AS [IsDeleted]
+    FROM [dbo].[T_Permissions] AS [Extent1]
+    WHERE 0 = [Extent1].[IsDeleted]
+2019-09-10 13:54:29,348 [93] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句
+
+2019-09-10 13:54:29,348 [93] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句-- Executing at 2019/9/10/周二 13:54:29 +08:00
+
+2019-09-10 13:54:29,348 [93] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句-- Completed in 0 ms with result: SqlDataReader
+
+2019-09-10 13:54:29,348 [93] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句
+
+2019-09-10 13:54:29,349 [93] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句Closed connection at 2019/9/10/周二 13:54:29 +08:00
+
+2019-09-10 13:54:29,349 [93] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句Opened connection at 2019/9/10/周二 13:54:29 +08:00
+
+2019-09-10 13:54:29,349 [93] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句SELECT 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[Description] AS [Description], 
+    [Extent1].[Name] AS [Name], 
+    [Extent1].[CreateDateTime] AS [CreateDateTime], 
+    [Extent1].[IsDeleted] AS [IsDeleted]
+    FROM [dbo].[T_Permissions] AS [Extent1]
+    WHERE 0 = [Extent1].[IsDeleted]
+2019-09-10 13:54:29,349 [93] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句
+
+2019-09-10 13:54:29,349 [93] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句-- Executing at 2019/9/10/周二 13:54:29 +08:00
+
+2019-09-10 13:54:29,349 [93] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句-- Completed in 0 ms with result: SqlDataReader
+
+2019-09-10 13:54:29,349 [93] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句
+
+2019-09-10 13:54:29,349 [93] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句Closed connection at 2019/9/10/周二 13:54:29 +08:00
+
+2019-09-10 13:54:29,350 [93] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句Opened connection at 2019/9/10/周二 13:54:29 +08:00
+
+2019-09-10 13:54:29,350 [93] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句SELECT TOP (1) 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[Name] AS [Name], 
+    [Extent1].[PhoneNum] AS [PhoneNum], 
+    [Extent1].[PasswordHash] AS [PasswordHash], 
+    [Extent1].[PasswordSalt] AS [PasswordSalt], 
+    [Extent1].[Email] AS [Email], 
+    [Extent1].[CityId] AS [CityId], 
+    [Extent1].[LoginErrorTimes] AS [LoginErrorTimes], 
+    [Extent1].[LastLoginErrorDateTime] AS [LastLoginErrorDateTime], 
+    [Extent1].[CreateDateTime] AS [CreateDateTime], 
+    [Extent1].[IsDeleted] AS [IsDeleted]
+    FROM [dbo].[T_AdminUsers] AS [Extent1]
+    WHERE (0 = [Extent1].[IsDeleted]) AND ([Extent1].[Id] = @p__linq__0)
+2019-09-10 13:54:29,350 [93] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句
+
+2019-09-10 13:54:29,350 [93] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句-- p__linq__0: '11' (Type = Int64, IsNullable = false)
+
+2019-09-10 13:54:29,350 [93] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句-- Executing at 2019/9/10/周二 13:54:29 +08:00
+
+2019-09-10 13:54:29,377 [93] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句-- Completed in 26 ms with result: SqlDataReader
+
+2019-09-10 13:54:29,377 [93] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句
+
+2019-09-10 13:54:29,377 [93] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句Closed connection at 2019/9/10/周二 13:54:29 +08:00
+
+2019-09-10 13:54:29,382 [93] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句Opened connection at 2019/9/10/周二 13:54:29 +08:00
+
+2019-09-10 13:54:29,466 [93] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句SELECT 
+    [Extent2].[Id] AS [Id], 
+    [Extent2].[Name] AS [Name], 
+    [Extent2].[CreateDateTime] AS [CreateDateTime], 
+    [Extent2].[IsDeleted] AS [IsDeleted]
+    FROM  [dbo].[T_AdminUserRoles] AS [Extent1]
+    INNER JOIN [dbo].[T_Roles] AS [Extent2] ON [Extent1].[RoleId] = [Extent2].[Id]
+    WHERE [Extent1].[AdminUserId] = @EntityKeyValue1
+2019-09-10 13:54:29,466 [93] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句
+
+2019-09-10 13:54:29,466 [93] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句-- EntityKeyValue1: '11' (Type = Int64, IsNullable = false)
+
+2019-09-10 13:54:29,466 [93] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句-- Executing at 2019/9/10/周二 13:54:29 +08:00
+
+2019-09-10 13:54:29,806 [93] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句-- Completed in 339 ms with result: SqlDataReader
+
+2019-09-10 13:54:29,806 [93] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句
+
+2019-09-10 13:54:29,809 [93] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句Closed connection at 2019/9/10/周二 13:54:29 +08:00
+
+2019-09-10 13:54:29,849 [93] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句Opened connection at 2019/9/10/周二 13:54:29 +08:00
+
+2019-09-10 13:54:29,849 [93] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句SELECT 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[Description] AS [Description], 
+    [Extent1].[Name] AS [Name], 
+    [Extent1].[CreateDateTime] AS [CreateDateTime], 
+    [Extent1].[IsDeleted] AS [IsDeleted]
+    FROM [dbo].[T_Permissions] AS [Extent1]
+    WHERE 0 = [Extent1].[IsDeleted]
+2019-09-10 13:54:29,849 [93] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句
+
+2019-09-10 13:54:29,849 [93] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句-- Executing at 2019/9/10/周二 13:54:29 +08:00
+
+2019-09-10 13:54:29,850 [93] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句-- Completed in 0 ms with result: SqlDataReader
+
+2019-09-10 13:54:29,850 [93] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句
+
+2019-09-10 13:54:29,850 [93] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句Closed connection at 2019/9/10/周二 13:54:29 +08:00
+
+2019-09-10 13:54:29,851 [93] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句Opened connection at 2019/9/10/周二 13:54:29 +08:00
+
+2019-09-10 13:54:29,851 [93] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句SELECT 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[Description] AS [Description], 
+    [Extent1].[Name] AS [Name], 
+    [Extent1].[CreateDateTime] AS [CreateDateTime], 
+    [Extent1].[IsDeleted] AS [IsDeleted]
+    FROM [dbo].[T_Permissions] AS [Extent1]
+    WHERE 0 = [Extent1].[IsDeleted]
+2019-09-10 13:54:29,851 [93] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句
+
+2019-09-10 13:54:29,851 [93] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句-- Executing at 2019/9/10/周二 13:54:29 +08:00
+
+2019-09-10 13:54:29,852 [93] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句-- Completed in 0 ms with result: SqlDataReader
+
+2019-09-10 13:54:29,852 [93] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句
+
+2019-09-10 13:54:29,852 [93] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句Closed connection at 2019/9/10/周二 13:54:29 +08:00
+
+2019-09-10 13:54:29,853 [93] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句Opened connection at 2019/9/10/周二 13:54:29 +08:00
+
+2019-09-10 13:54:29,853 [93] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句SELECT 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[Description] AS [Description], 
+    [Extent1].[Name] AS [Name], 
+    [Extent1].[CreateDateTime] AS [CreateDateTime], 
+    [Extent1].[IsDeleted] AS [IsDeleted]
+    FROM [dbo].[T_Permissions] AS [Extent1]
+    WHERE 0 = [Extent1].[IsDeleted]
+2019-09-10 13:54:29,853 [93] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句
+
+2019-09-10 13:54:29,853 [93] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句-- Executing at 2019/9/10/周二 13:54:29 +08:00
+
+2019-09-10 13:54:29,853 [93] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句-- Completed in 0 ms with result: SqlDataReader
+
+2019-09-10 13:54:29,853 [93] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句
+
+2019-09-10 13:54:29,854 [93] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句Closed connection at 2019/9/10/周二 13:54:29 +08:00
+
+2019-09-10 13:54:33,509 [84] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句Opened connection at 2019/9/10/周二 13:54:33 +08:00
+
+2019-09-10 13:54:33,509 [84] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句SELECT 
+    [Extent1].[LoginErrorTimes] AS [LoginErrorTimes], 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[Name] AS [Name], 
+    [Extent1].[PhoneNum] AS [PhoneNum], 
+    [Extent1].[PasswordHash] AS [PasswordHash], 
+    [Extent1].[PasswordSalt] AS [PasswordSalt], 
+    [Extent1].[Email] AS [Email], 
+    [Extent1].[CityId] AS [CityId], 
+    [Extent1].[LastLoginErrorDateTime] AS [LastLoginErrorDateTime], 
+    [Extent1].[CreateDateTime] AS [CreateDateTime], 
+    [Extent1].[IsDeleted] AS [IsDeleted], 
+    [Extent2].[Id] AS [Id1], 
+    [Extent2].[Name] AS [Name1], 
+    [Extent2].[CreateDateTime] AS [CreateDateTime1], 
+    [Extent2].[IsDeleted] AS [IsDeleted1]
+    FROM  [dbo].[T_AdminUsers] AS [Extent1]
+    LEFT OUTER JOIN [dbo].[T_Cities] AS [Extent2] ON [Extent1].[CityId] = [Extent2].[Id]
+    WHERE 0 = [Extent1].[IsDeleted]
+2019-09-10 13:54:33,509 [84] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句
+
+2019-09-10 13:54:33,509 [84] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句-- Executing at 2019/9/10/周二 13:54:33 +08:00
+
+2019-09-10 13:54:33,511 [84] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句-- Completed in 1 ms with result: SqlDataReader
+
+2019-09-10 13:54:33,511 [84] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句
+
+2019-09-10 13:54:33,512 [84] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句Closed connection at 2019/9/10/周二 13:54:33 +08:00
+
+2019-09-10 13:54:35,330 [69] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句Opened connection at 2019/9/10/周二 13:54:35 +08:00
+
+2019-09-10 13:54:35,331 [69] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句SELECT 
+    [Extent1].[LoginErrorTimes] AS [LoginErrorTimes], 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[Name] AS [Name], 
+    [Extent1].[PhoneNum] AS [PhoneNum], 
+    [Extent1].[PasswordHash] AS [PasswordHash], 
+    [Extent1].[PasswordSalt] AS [PasswordSalt], 
+    [Extent1].[Email] AS [Email], 
+    [Extent1].[CityId] AS [CityId], 
+    [Extent1].[LastLoginErrorDateTime] AS [LastLoginErrorDateTime], 
+    [Extent1].[CreateDateTime] AS [CreateDateTime], 
+    [Extent1].[IsDeleted] AS [IsDeleted], 
+    [Extent2].[Id] AS [Id1], 
+    [Extent2].[Name] AS [Name1], 
+    [Extent2].[CreateDateTime] AS [CreateDateTime1], 
+    [Extent2].[IsDeleted] AS [IsDeleted1]
+    FROM  [dbo].[T_AdminUsers] AS [Extent1]
+    LEFT OUTER JOIN [dbo].[T_Cities] AS [Extent2] ON [Extent1].[CityId] = [Extent2].[Id]
+    WHERE 0 = [Extent1].[IsDeleted]
+2019-09-10 13:54:35,331 [69] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句
+
+2019-09-10 13:54:35,331 [69] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句-- Executing at 2019/9/10/周二 13:54:35 +08:00
+
+2019-09-10 13:54:35,331 [69] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句-- Completed in 0 ms with result: SqlDataReader
+
+2019-09-10 13:54:35,331 [69] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句
+
+2019-09-10 13:54:35,331 [69] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句Closed connection at 2019/9/10/周二 13:54:35 +08:00
+
+2019-09-10 13:54:39,509 [91] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句Opened connection at 2019/9/10/周二 13:54:39 +08:00
+
+2019-09-10 13:54:39,510 [91] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句SELECT 
+    [Extent1].[LoginErrorTimes] AS [LoginErrorTimes], 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[Name] AS [Name], 
+    [Extent1].[PhoneNum] AS [PhoneNum], 
+    [Extent1].[PasswordHash] AS [PasswordHash], 
+    [Extent1].[PasswordSalt] AS [PasswordSalt], 
+    [Extent1].[Email] AS [Email], 
+    [Extent1].[CityId] AS [CityId], 
+    [Extent1].[LastLoginErrorDateTime] AS [LastLoginErrorDateTime], 
+    [Extent1].[CreateDateTime] AS [CreateDateTime], 
+    [Extent1].[IsDeleted] AS [IsDeleted], 
+    [Extent2].[Id] AS [Id1], 
+    [Extent2].[Name] AS [Name1], 
+    [Extent2].[CreateDateTime] AS [CreateDateTime1], 
+    [Extent2].[IsDeleted] AS [IsDeleted1]
+    FROM  [dbo].[T_AdminUsers] AS [Extent1]
+    LEFT OUTER JOIN [dbo].[T_Cities] AS [Extent2] ON [Extent1].[CityId] = [Extent2].[Id]
+    WHERE 0 = [Extent1].[IsDeleted]
+2019-09-10 13:54:39,510 [91] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句
+
+2019-09-10 13:54:39,510 [91] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句-- Executing at 2019/9/10/周二 13:54:39 +08:00
+
+2019-09-10 13:54:39,511 [91] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句-- Completed in 1 ms with result: SqlDataReader
+
+2019-09-10 13:54:39,511 [91] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句
+
+2019-09-10 13:54:39,511 [91] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句Closed connection at 2019/9/10/周二 13:54:39 +08:00
+
+2019-09-10 13:56:52,670 [79] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句Opened connection at 2019/9/10/周二 13:56:52 +08:00
+
+2019-09-10 13:56:52,670 [79] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句SELECT 
+    [Extent1].[LoginErrorTimes] AS [LoginErrorTimes], 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[Name] AS [Name], 
+    [Extent1].[PhoneNum] AS [PhoneNum], 
+    [Extent1].[PasswordHash] AS [PasswordHash], 
+    [Extent1].[PasswordSalt] AS [PasswordSalt], 
+    [Extent1].[Email] AS [Email], 
+    [Extent1].[CityId] AS [CityId], 
+    [Extent1].[LastLoginErrorDateTime] AS [LastLoginErrorDateTime], 
+    [Extent1].[CreateDateTime] AS [CreateDateTime], 
+    [Extent1].[IsDeleted] AS [IsDeleted], 
+    [Extent2].[Id] AS [Id1], 
+    [Extent2].[Name] AS [Name1], 
+    [Extent2].[CreateDateTime] AS [CreateDateTime1], 
+    [Extent2].[IsDeleted] AS [IsDeleted1]
+    FROM  [dbo].[T_AdminUsers] AS [Extent1]
+    LEFT OUTER JOIN [dbo].[T_Cities] AS [Extent2] ON [Extent1].[CityId] = [Extent2].[Id]
+    WHERE 0 = [Extent1].[IsDeleted]
+2019-09-10 13:56:52,670 [79] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句
+
+2019-09-10 13:56:52,670 [79] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句-- Executing at 2019/9/10/周二 13:56:52 +08:00
+
+2019-09-10 13:56:52,678 [79] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句-- Completed in 7 ms with result: SqlDataReader
+
+2019-09-10 13:56:52,678 [79] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句
+
+2019-09-10 13:56:52,678 [79] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句Closed connection at 2019/9/10/周二 13:56:52 +08:00
+
+2019-09-10 13:56:54,749 [91] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句Opened connection at 2019/9/10/周二 13:56:54 +08:00
+
+2019-09-10 13:56:54,749 [91] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句SELECT 
+    [Extent1].[LoginErrorTimes] AS [LoginErrorTimes], 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[Name] AS [Name], 
+    [Extent1].[PhoneNum] AS [PhoneNum], 
+    [Extent1].[PasswordHash] AS [PasswordHash], 
+    [Extent1].[PasswordSalt] AS [PasswordSalt], 
+    [Extent1].[Email] AS [Email], 
+    [Extent1].[CityId] AS [CityId], 
+    [Extent1].[LastLoginErrorDateTime] AS [LastLoginErrorDateTime], 
+    [Extent1].[CreateDateTime] AS [CreateDateTime], 
+    [Extent1].[IsDeleted] AS [IsDeleted], 
+    [Extent2].[Id] AS [Id1], 
+    [Extent2].[Name] AS [Name1], 
+    [Extent2].[CreateDateTime] AS [CreateDateTime1], 
+    [Extent2].[IsDeleted] AS [IsDeleted1]
+    FROM  [dbo].[T_AdminUsers] AS [Extent1]
+    LEFT OUTER JOIN [dbo].[T_Cities] AS [Extent2] ON [Extent1].[CityId] = [Extent2].[Id]
+    WHERE 0 = [Extent1].[IsDeleted]
+2019-09-10 13:56:54,750 [91] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句
+
+2019-09-10 13:56:54,750 [91] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句-- Executing at 2019/9/10/周二 13:56:54 +08:00
+
+2019-09-10 13:56:54,750 [91] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句-- Completed in 0 ms with result: SqlDataReader
+
+2019-09-10 13:56:54,750 [91] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句
+
+2019-09-10 13:56:54,750 [91] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句Closed connection at 2019/9/10/周二 13:56:54 +08:00
+
+2019-09-10 14:02:26,087 [50] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句Opened connection at 2019/9/10/周二 14:02:26 +08:00
+
+2019-09-10 14:02:26,091 [50] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句SELECT 
+    [Extent1].[LoginErrorTimes] AS [LoginErrorTimes], 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[Name] AS [Name], 
+    [Extent1].[PhoneNum] AS [PhoneNum], 
+    [Extent1].[PasswordHash] AS [PasswordHash], 
+    [Extent1].[PasswordSalt] AS [PasswordSalt], 
+    [Extent1].[Email] AS [Email], 
+    [Extent1].[CityId] AS [CityId], 
+    [Extent1].[LastLoginErrorDateTime] AS [LastLoginErrorDateTime], 
+    [Extent1].[CreateDateTime] AS [CreateDateTime], 
+    [Extent1].[IsDeleted] AS [IsDeleted], 
+    [Extent2].[Id] AS [Id1], 
+    [Extent2].[Name] AS [Name1], 
+    [Extent2].[CreateDateTime] AS [CreateDateTime1], 
+    [Extent2].[IsDeleted] AS [IsDeleted1]
+    FROM  [dbo].[T_AdminUsers] AS [Extent1]
+    LEFT OUTER JOIN [dbo].[T_Cities] AS [Extent2] ON [Extent1].[CityId] = [Extent2].[Id]
+    WHERE 0 = [Extent1].[IsDeleted]
+2019-09-10 14:02:26,091 [50] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句
+
+2019-09-10 14:02:26,091 [50] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句-- Executing at 2019/9/10/周二 14:02:26 +08:00
+
+2019-09-10 14:02:26,240 [50] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句-- Completed in 149 ms with result: SqlDataReader
+
+2019-09-10 14:02:26,240 [50] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句
+
+2019-09-10 14:02:26,241 [50] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句Closed connection at 2019/9/10/周二 14:02:26 +08:00
+
+2019-09-10 14:02:28,088 [79] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句Opened connection at 2019/9/10/周二 14:02:28 +08:00
+
+2019-09-10 14:02:28,088 [79] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句SELECT 
+    [Extent1].[LoginErrorTimes] AS [LoginErrorTimes], 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[Name] AS [Name], 
+    [Extent1].[PhoneNum] AS [PhoneNum], 
+    [Extent1].[PasswordHash] AS [PasswordHash], 
+    [Extent1].[PasswordSalt] AS [PasswordSalt], 
+    [Extent1].[Email] AS [Email], 
+    [Extent1].[CityId] AS [CityId], 
+    [Extent1].[LastLoginErrorDateTime] AS [LastLoginErrorDateTime], 
+    [Extent1].[CreateDateTime] AS [CreateDateTime], 
+    [Extent1].[IsDeleted] AS [IsDeleted], 
+    [Extent2].[Id] AS [Id1], 
+    [Extent2].[Name] AS [Name1], 
+    [Extent2].[CreateDateTime] AS [CreateDateTime1], 
+    [Extent2].[IsDeleted] AS [IsDeleted1]
+    FROM  [dbo].[T_AdminUsers] AS [Extent1]
+    LEFT OUTER JOIN [dbo].[T_Cities] AS [Extent2] ON [Extent1].[CityId] = [Extent2].[Id]
+    WHERE 0 = [Extent1].[IsDeleted]
+2019-09-10 14:02:28,089 [79] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句
+
+2019-09-10 14:02:28,089 [79] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句-- Executing at 2019/9/10/周二 14:02:28 +08:00
+
+2019-09-10 14:02:28,091 [79] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句-- Completed in 2 ms with result: SqlDataReader
+
+2019-09-10 14:02:28,091 [79] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句
+
+2019-09-10 14:02:28,091 [79] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句Closed connection at 2019/9/10/周二 14:02:28 +08:00
+
+2019-09-10 14:02:32,156 [87] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句Opened connection at 2019/9/10/周二 14:02:32 +08:00
+
+2019-09-10 14:02:32,157 [87] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句SELECT TOP (1) 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[Name] AS [Name], 
+    [Extent1].[PhoneNum] AS [PhoneNum], 
+    [Extent1].[PasswordHash] AS [PasswordHash], 
+    [Extent1].[PasswordSalt] AS [PasswordSalt], 
+    [Extent1].[Email] AS [Email], 
+    [Extent1].[CityId] AS [CityId], 
+    [Extent1].[LoginErrorTimes] AS [LoginErrorTimes], 
+    [Extent1].[LastLoginErrorDateTime] AS [LastLoginErrorDateTime], 
+    [Extent1].[CreateDateTime] AS [CreateDateTime], 
+    [Extent1].[IsDeleted] AS [IsDeleted]
+    FROM [dbo].[T_AdminUsers] AS [Extent1]
+    WHERE (0 = [Extent1].[IsDeleted]) AND ([Extent1].[Id] = @p__linq__0)
+2019-09-10 14:02:32,157 [87] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句
+
+2019-09-10 14:02:32,157 [87] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句-- p__linq__0: '18' (Type = Int64, IsNullable = false)
+
+2019-09-10 14:02:32,158 [87] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句-- Executing at 2019/9/10/周二 14:02:32 +08:00
+
+2019-09-10 14:02:32,161 [87] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句-- Completed in 3 ms with result: SqlDataReader
+
+2019-09-10 14:02:32,161 [87] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句
+
+2019-09-10 14:02:32,162 [87] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句Closed connection at 2019/9/10/周二 14:02:32 +08:00
+
+2019-09-10 14:02:32,162 [87] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句Opened connection at 2019/9/10/周二 14:02:32 +08:00
+
+2019-09-10 14:02:32,163 [87] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句SELECT 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[Name] AS [Name], 
+    [Extent1].[CreateDateTime] AS [CreateDateTime], 
+    [Extent1].[IsDeleted] AS [IsDeleted]
+    FROM [dbo].[T_Cities] AS [Extent1]
+    WHERE 0 = [Extent1].[IsDeleted]
+2019-09-10 14:02:32,163 [87] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句
+
+2019-09-10 14:02:32,163 [87] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句-- Executing at 2019/9/10/周二 14:02:32 +08:00
+
+2019-09-10 14:02:32,165 [87] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句-- Completed in 2 ms with result: SqlDataReader
+
+2019-09-10 14:02:32,165 [87] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句
+
+2019-09-10 14:02:32,166 [87] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句Closed connection at 2019/9/10/周二 14:02:32 +08:00
+
+2019-09-10 14:02:32,167 [87] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句Opened connection at 2019/9/10/周二 14:02:32 +08:00
+
+2019-09-10 14:02:32,167 [87] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句SELECT 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[Name] AS [Name], 
+    [Extent1].[CreateDateTime] AS [CreateDateTime], 
+    [Extent1].[IsDeleted] AS [IsDeleted]
+    FROM [dbo].[T_Roles] AS [Extent1]
+    WHERE 0 = [Extent1].[IsDeleted]
+2019-09-10 14:02:32,167 [87] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句
+
+2019-09-10 14:02:32,167 [87] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句-- Executing at 2019/9/10/周二 14:02:32 +08:00
+
+2019-09-10 14:02:32,186 [87] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句-- Completed in 18 ms with result: SqlDataReader
+
+2019-09-10 14:02:32,186 [87] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句
+
+2019-09-10 14:02:32,186 [87] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句Closed connection at 2019/9/10/周二 14:02:32 +08:00
+
+2019-09-10 14:02:32,187 [87] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句Opened connection at 2019/9/10/周二 14:02:32 +08:00
+
+2019-09-10 14:02:32,187 [87] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句SELECT 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[Description] AS [Description], 
+    [Extent1].[Name] AS [Name], 
+    [Extent1].[CreateDateTime] AS [CreateDateTime], 
+    [Extent1].[IsDeleted] AS [IsDeleted]
+    FROM [dbo].[T_Permissions] AS [Extent1]
+    WHERE 0 = [Extent1].[IsDeleted]
+2019-09-10 14:02:32,187 [87] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句
+
+2019-09-10 14:02:32,188 [87] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句-- Executing at 2019/9/10/周二 14:02:32 +08:00
+
+2019-09-10 14:02:32,252 [87] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句-- Completed in 64 ms with result: SqlDataReader
+
+2019-09-10 14:02:32,252 [87] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句
+
+2019-09-10 14:02:32,253 [87] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句Closed connection at 2019/9/10/周二 14:02:32 +08:00
+
+2019-09-10 14:02:32,253 [87] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句Opened connection at 2019/9/10/周二 14:02:32 +08:00
+
+2019-09-10 14:02:32,254 [87] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句SELECT 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[Description] AS [Description], 
+    [Extent1].[Name] AS [Name], 
+    [Extent1].[CreateDateTime] AS [CreateDateTime], 
+    [Extent1].[IsDeleted] AS [IsDeleted]
+    FROM [dbo].[T_Permissions] AS [Extent1]
+    WHERE 0 = [Extent1].[IsDeleted]
+2019-09-10 14:02:32,254 [87] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句
+
+2019-09-10 14:02:32,254 [87] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句-- Executing at 2019/9/10/周二 14:02:32 +08:00
+
+2019-09-10 14:02:32,255 [87] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句-- Completed in 0 ms with result: SqlDataReader
+
+2019-09-10 14:02:32,255 [87] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句
+
+2019-09-10 14:02:32,255 [87] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句Closed connection at 2019/9/10/周二 14:02:32 +08:00
+
+2019-09-10 14:02:32,256 [87] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句Opened connection at 2019/9/10/周二 14:02:32 +08:00
+
+2019-09-10 14:02:32,256 [87] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句SELECT 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[Description] AS [Description], 
+    [Extent1].[Name] AS [Name], 
+    [Extent1].[CreateDateTime] AS [CreateDateTime], 
+    [Extent1].[IsDeleted] AS [IsDeleted]
+    FROM [dbo].[T_Permissions] AS [Extent1]
+    WHERE 0 = [Extent1].[IsDeleted]
+2019-09-10 14:02:32,256 [87] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句
+
+2019-09-10 14:02:32,256 [87] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句-- Executing at 2019/9/10/周二 14:02:32 +08:00
+
+2019-09-10 14:02:32,257 [87] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句-- Completed in 0 ms with result: SqlDataReader
+
+2019-09-10 14:02:32,257 [87] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句
+
+2019-09-10 14:02:32,257 [87] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句Closed connection at 2019/9/10/周二 14:02:32 +08:00
+
+2019-09-10 14:02:32,258 [87] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句Opened connection at 2019/9/10/周二 14:02:32 +08:00
+
+2019-09-10 14:02:32,258 [87] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句SELECT 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[Description] AS [Description], 
+    [Extent1].[Name] AS [Name], 
+    [Extent1].[CreateDateTime] AS [CreateDateTime], 
+    [Extent1].[IsDeleted] AS [IsDeleted]
+    FROM [dbo].[T_Permissions] AS [Extent1]
+    WHERE 0 = [Extent1].[IsDeleted]
+2019-09-10 14:02:32,258 [87] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句
+
+2019-09-10 14:02:32,258 [87] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句-- Executing at 2019/9/10/周二 14:02:32 +08:00
+
+2019-09-10 14:02:32,259 [87] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句-- Completed in 0 ms with result: SqlDataReader
+
+2019-09-10 14:02:32,259 [87] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句
+
+2019-09-10 14:02:32,259 [87] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句Closed connection at 2019/9/10/周二 14:02:32 +08:00
+
+2019-09-10 14:02:32,260 [87] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句Opened connection at 2019/9/10/周二 14:02:32 +08:00
+
+2019-09-10 14:02:32,261 [87] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句SELECT TOP (1) 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[Name] AS [Name], 
+    [Extent1].[PhoneNum] AS [PhoneNum], 
+    [Extent1].[PasswordHash] AS [PasswordHash], 
+    [Extent1].[PasswordSalt] AS [PasswordSalt], 
+    [Extent1].[Email] AS [Email], 
+    [Extent1].[CityId] AS [CityId], 
+    [Extent1].[LoginErrorTimes] AS [LoginErrorTimes], 
+    [Extent1].[LastLoginErrorDateTime] AS [LastLoginErrorDateTime], 
+    [Extent1].[CreateDateTime] AS [CreateDateTime], 
+    [Extent1].[IsDeleted] AS [IsDeleted]
+    FROM [dbo].[T_AdminUsers] AS [Extent1]
+    WHERE (0 = [Extent1].[IsDeleted]) AND ([Extent1].[Id] = @p__linq__0)
+2019-09-10 14:02:32,261 [87] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句
+
+2019-09-10 14:02:32,261 [87] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句-- p__linq__0: '18' (Type = Int64, IsNullable = false)
+
+2019-09-10 14:02:32,261 [87] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句-- Executing at 2019/9/10/周二 14:02:32 +08:00
+
+2019-09-10 14:02:32,262 [87] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句-- Completed in 0 ms with result: SqlDataReader
+
+2019-09-10 14:02:32,262 [87] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句
+
+2019-09-10 14:02:32,262 [87] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句Closed connection at 2019/9/10/周二 14:02:32 +08:00
+
+2019-09-10 14:02:32,263 [87] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句Opened connection at 2019/9/10/周二 14:02:32 +08:00
+
+2019-09-10 14:02:32,264 [87] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句SELECT 
+    [Extent2].[Id] AS [Id], 
+    [Extent2].[Name] AS [Name], 
+    [Extent2].[CreateDateTime] AS [CreateDateTime], 
+    [Extent2].[IsDeleted] AS [IsDeleted]
+    FROM  [dbo].[T_AdminUserRoles] AS [Extent1]
+    INNER JOIN [dbo].[T_Roles] AS [Extent2] ON [Extent1].[RoleId] = [Extent2].[Id]
+    WHERE [Extent1].[AdminUserId] = @EntityKeyValue1
+2019-09-10 14:02:32,264 [87] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句
+
+2019-09-10 14:02:32,264 [87] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句-- EntityKeyValue1: '18' (Type = Int64, IsNullable = false)
+
+2019-09-10 14:02:32,264 [87] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句-- Executing at 2019/9/10/周二 14:02:32 +08:00
+
+2019-09-10 14:02:32,268 [87] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句-- Completed in 3 ms with result: SqlDataReader
+
+2019-09-10 14:02:32,268 [87] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句
+
+2019-09-10 14:02:32,268 [87] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句Closed connection at 2019/9/10/周二 14:02:32 +08:00
+
+2019-09-10 14:02:32,269 [87] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句Opened connection at 2019/9/10/周二 14:02:32 +08:00
+
+2019-09-10 14:02:32,270 [87] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句SELECT 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[Description] AS [Description], 
+    [Extent1].[Name] AS [Name], 
+    [Extent1].[CreateDateTime] AS [CreateDateTime], 
+    [Extent1].[IsDeleted] AS [IsDeleted]
+    FROM [dbo].[T_Permissions] AS [Extent1]
+    WHERE 0 = [Extent1].[IsDeleted]
+2019-09-10 14:02:32,270 [87] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句
+
+2019-09-10 14:02:32,270 [87] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句-- Executing at 2019/9/10/周二 14:02:32 +08:00
+
+2019-09-10 14:02:32,270 [87] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句-- Completed in 0 ms with result: SqlDataReader
+
+2019-09-10 14:02:32,271 [87] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句
+
+2019-09-10 14:02:32,271 [87] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句Closed connection at 2019/9/10/周二 14:02:32 +08:00
+
+2019-09-10 14:02:36,956 [19] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句Opened connection at 2019/9/10/周二 14:02:36 +08:00
+
+2019-09-10 14:02:36,956 [19] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句SELECT TOP (1) 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[Name] AS [Name], 
+    [Extent1].[PhoneNum] AS [PhoneNum], 
+    [Extent1].[PasswordHash] AS [PasswordHash], 
+    [Extent1].[PasswordSalt] AS [PasswordSalt], 
+    [Extent1].[Email] AS [Email], 
+    [Extent1].[CityId] AS [CityId], 
+    [Extent1].[LoginErrorTimes] AS [LoginErrorTimes], 
+    [Extent1].[LastLoginErrorDateTime] AS [LastLoginErrorDateTime], 
+    [Extent1].[CreateDateTime] AS [CreateDateTime], 
+    [Extent1].[IsDeleted] AS [IsDeleted]
+    FROM [dbo].[T_AdminUsers] AS [Extent1]
+    WHERE (0 = [Extent1].[IsDeleted]) AND ([Extent1].[Id] = @p__linq__0)
+2019-09-10 14:02:36,956 [19] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句
+
+2019-09-10 14:02:36,956 [19] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句-- p__linq__0: '13' (Type = Int64, IsNullable = false)
+
+2019-09-10 14:02:36,956 [19] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句-- Executing at 2019/9/10/周二 14:02:36 +08:00
+
+2019-09-10 14:02:36,957 [19] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句-- Completed in 0 ms with result: SqlDataReader
+
+2019-09-10 14:02:36,957 [19] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句
+
+2019-09-10 14:02:36,957 [19] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句Closed connection at 2019/9/10/周二 14:02:36 +08:00
+
+2019-09-10 14:02:36,957 [19] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句Opened connection at 2019/9/10/周二 14:02:36 +08:00
+
+2019-09-10 14:02:36,957 [19] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句SELECT 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[Name] AS [Name], 
+    [Extent1].[CreateDateTime] AS [CreateDateTime], 
+    [Extent1].[IsDeleted] AS [IsDeleted]
+    FROM [dbo].[T_Cities] AS [Extent1]
+    WHERE [Extent1].[Id] = @EntityKeyValue1
+2019-09-10 14:02:36,957 [19] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句
+
+2019-09-10 14:02:36,957 [19] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句-- EntityKeyValue1: '7' (Type = Int64)
+
+2019-09-10 14:02:36,957 [19] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句-- Executing at 2019/9/10/周二 14:02:36 +08:00
+
+2019-09-10 14:02:36,959 [19] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句-- Completed in 2 ms with result: SqlDataReader
+
+2019-09-10 14:02:36,960 [19] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句
+
+2019-09-10 14:02:36,960 [19] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句Closed connection at 2019/9/10/周二 14:02:36 +08:00
+
+2019-09-10 14:02:36,960 [19] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句Opened connection at 2019/9/10/周二 14:02:36 +08:00
+
+2019-09-10 14:02:36,961 [19] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句SELECT 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[Name] AS [Name], 
+    [Extent1].[CreateDateTime] AS [CreateDateTime], 
+    [Extent1].[IsDeleted] AS [IsDeleted]
+    FROM [dbo].[T_Cities] AS [Extent1]
+    WHERE 0 = [Extent1].[IsDeleted]
+2019-09-10 14:02:36,961 [19] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句
+
+2019-09-10 14:02:36,961 [19] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句-- Executing at 2019/9/10/周二 14:02:36 +08:00
+
+2019-09-10 14:02:36,961 [19] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句-- Completed in 0 ms with result: SqlDataReader
+
+2019-09-10 14:02:36,961 [19] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句
+
+2019-09-10 14:02:36,961 [19] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句Closed connection at 2019/9/10/周二 14:02:36 +08:00
+
+2019-09-10 14:02:36,961 [19] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句Opened connection at 2019/9/10/周二 14:02:36 +08:00
+
+2019-09-10 14:02:36,962 [19] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句SELECT 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[Name] AS [Name], 
+    [Extent1].[CreateDateTime] AS [CreateDateTime], 
+    [Extent1].[IsDeleted] AS [IsDeleted]
+    FROM [dbo].[T_Roles] AS [Extent1]
+    WHERE 0 = [Extent1].[IsDeleted]
+2019-09-10 14:02:36,962 [19] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句
+
+2019-09-10 14:02:36,962 [19] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句-- Executing at 2019/9/10/周二 14:02:36 +08:00
+
+2019-09-10 14:02:36,962 [19] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句-- Completed in 0 ms with result: SqlDataReader
+
+2019-09-10 14:02:36,962 [19] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句
+
+2019-09-10 14:02:36,962 [19] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句Closed connection at 2019/9/10/周二 14:02:36 +08:00
+
+2019-09-10 14:02:36,962 [19] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句Opened connection at 2019/9/10/周二 14:02:36 +08:00
+
+2019-09-10 14:02:36,963 [19] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句SELECT 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[Description] AS [Description], 
+    [Extent1].[Name] AS [Name], 
+    [Extent1].[CreateDateTime] AS [CreateDateTime], 
+    [Extent1].[IsDeleted] AS [IsDeleted]
+    FROM [dbo].[T_Permissions] AS [Extent1]
+    WHERE 0 = [Extent1].[IsDeleted]
+2019-09-10 14:02:36,963 [19] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句
+
+2019-09-10 14:02:36,963 [19] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句-- Executing at 2019/9/10/周二 14:02:36 +08:00
+
+2019-09-10 14:02:36,963 [19] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句-- Completed in 0 ms with result: SqlDataReader
+
+2019-09-10 14:02:36,963 [19] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句
+
+2019-09-10 14:02:36,963 [19] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句Closed connection at 2019/9/10/周二 14:02:36 +08:00
+
+2019-09-10 14:02:36,963 [19] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句Opened connection at 2019/9/10/周二 14:02:36 +08:00
+
+2019-09-10 14:02:36,964 [19] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句SELECT 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[Description] AS [Description], 
+    [Extent1].[Name] AS [Name], 
+    [Extent1].[CreateDateTime] AS [CreateDateTime], 
+    [Extent1].[IsDeleted] AS [IsDeleted]
+    FROM [dbo].[T_Permissions] AS [Extent1]
+    WHERE 0 = [Extent1].[IsDeleted]
+2019-09-10 14:02:36,964 [19] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句
+
+2019-09-10 14:02:36,964 [19] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句-- Executing at 2019/9/10/周二 14:02:36 +08:00
+
+2019-09-10 14:02:36,964 [19] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句-- Completed in 0 ms with result: SqlDataReader
+
+2019-09-10 14:02:36,964 [19] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句
+
+2019-09-10 14:02:36,964 [19] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句Closed connection at 2019/9/10/周二 14:02:36 +08:00
+
+2019-09-10 14:02:36,964 [19] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句Opened connection at 2019/9/10/周二 14:02:36 +08:00
+
+2019-09-10 14:02:36,965 [19] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句SELECT 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[Description] AS [Description], 
+    [Extent1].[Name] AS [Name], 
+    [Extent1].[CreateDateTime] AS [CreateDateTime], 
+    [Extent1].[IsDeleted] AS [IsDeleted]
+    FROM [dbo].[T_Permissions] AS [Extent1]
+    WHERE 0 = [Extent1].[IsDeleted]
+2019-09-10 14:02:36,965 [19] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句
+
+2019-09-10 14:02:36,965 [19] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句-- Executing at 2019/9/10/周二 14:02:36 +08:00
+
+2019-09-10 14:02:36,965 [19] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句-- Completed in 0 ms with result: SqlDataReader
+
+2019-09-10 14:02:36,965 [19] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句
+
+2019-09-10 14:02:36,965 [19] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句Closed connection at 2019/9/10/周二 14:02:36 +08:00
+
+2019-09-10 14:02:36,965 [19] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句Opened connection at 2019/9/10/周二 14:02:36 +08:00
+
+2019-09-10 14:02:36,965 [19] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句SELECT 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[Description] AS [Description], 
+    [Extent1].[Name] AS [Name], 
+    [Extent1].[CreateDateTime] AS [CreateDateTime], 
+    [Extent1].[IsDeleted] AS [IsDeleted]
+    FROM [dbo].[T_Permissions] AS [Extent1]
+    WHERE 0 = [Extent1].[IsDeleted]
+2019-09-10 14:02:36,965 [19] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句
+
+2019-09-10 14:02:36,965 [19] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句-- Executing at 2019/9/10/周二 14:02:36 +08:00
+
+2019-09-10 14:02:36,966 [19] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句-- Completed in 0 ms with result: SqlDataReader
+
+2019-09-10 14:02:36,966 [19] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句
+
+2019-09-10 14:02:36,966 [19] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句Closed connection at 2019/9/10/周二 14:02:36 +08:00
+
+2019-09-10 14:02:36,966 [19] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句Opened connection at 2019/9/10/周二 14:02:36 +08:00
+
+2019-09-10 14:02:36,966 [19] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句SELECT TOP (1) 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[Name] AS [Name], 
+    [Extent1].[PhoneNum] AS [PhoneNum], 
+    [Extent1].[PasswordHash] AS [PasswordHash], 
+    [Extent1].[PasswordSalt] AS [PasswordSalt], 
+    [Extent1].[Email] AS [Email], 
+    [Extent1].[CityId] AS [CityId], 
+    [Extent1].[LoginErrorTimes] AS [LoginErrorTimes], 
+    [Extent1].[LastLoginErrorDateTime] AS [LastLoginErrorDateTime], 
+    [Extent1].[CreateDateTime] AS [CreateDateTime], 
+    [Extent1].[IsDeleted] AS [IsDeleted]
+    FROM [dbo].[T_AdminUsers] AS [Extent1]
+    WHERE (0 = [Extent1].[IsDeleted]) AND ([Extent1].[Id] = @p__linq__0)
+2019-09-10 14:02:36,967 [19] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句
+
+2019-09-10 14:02:36,967 [19] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句-- p__linq__0: '13' (Type = Int64, IsNullable = false)
+
+2019-09-10 14:02:36,967 [19] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句-- Executing at 2019/9/10/周二 14:02:36 +08:00
+
+2019-09-10 14:02:36,967 [19] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句-- Completed in 0 ms with result: SqlDataReader
+
+2019-09-10 14:02:36,967 [19] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句
+
+2019-09-10 14:02:36,967 [19] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句Closed connection at 2019/9/10/周二 14:02:36 +08:00
+
+2019-09-10 14:02:36,967 [19] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句Opened connection at 2019/9/10/周二 14:02:36 +08:00
+
+2019-09-10 14:02:36,967 [19] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句SELECT 
+    [Extent2].[Id] AS [Id], 
+    [Extent2].[Name] AS [Name], 
+    [Extent2].[CreateDateTime] AS [CreateDateTime], 
+    [Extent2].[IsDeleted] AS [IsDeleted]
+    FROM  [dbo].[T_AdminUserRoles] AS [Extent1]
+    INNER JOIN [dbo].[T_Roles] AS [Extent2] ON [Extent1].[RoleId] = [Extent2].[Id]
+    WHERE [Extent1].[AdminUserId] = @EntityKeyValue1
+2019-09-10 14:02:36,967 [19] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句
+
+2019-09-10 14:02:36,967 [19] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句-- EntityKeyValue1: '13' (Type = Int64, IsNullable = false)
+
+2019-09-10 14:02:36,967 [19] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句-- Executing at 2019/9/10/周二 14:02:36 +08:00
+
+2019-09-10 14:02:36,968 [19] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句-- Completed in 0 ms with result: SqlDataReader
+
+2019-09-10 14:02:36,968 [19] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句
+
+2019-09-10 14:02:36,968 [19] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句Closed connection at 2019/9/10/周二 14:02:36 +08:00
+
+2019-09-10 14:02:36,968 [19] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句Opened connection at 2019/9/10/周二 14:02:36 +08:00
+
+2019-09-10 14:02:36,968 [19] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句SELECT 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[Description] AS [Description], 
+    [Extent1].[Name] AS [Name], 
+    [Extent1].[CreateDateTime] AS [CreateDateTime], 
+    [Extent1].[IsDeleted] AS [IsDeleted]
+    FROM [dbo].[T_Permissions] AS [Extent1]
+    WHERE 0 = [Extent1].[IsDeleted]
+2019-09-10 14:02:36,968 [19] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句
+
+2019-09-10 14:02:36,968 [19] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句-- Executing at 2019/9/10/周二 14:02:36 +08:00
+
+2019-09-10 14:02:36,969 [19] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句-- Completed in 0 ms with result: SqlDataReader
+
+2019-09-10 14:02:36,969 [19] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句
+
+2019-09-10 14:02:36,969 [19] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句Closed connection at 2019/9/10/周二 14:02:36 +08:00
+
+2019-09-10 14:02:36,969 [19] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句Opened connection at 2019/9/10/周二 14:02:36 +08:00
+
+2019-09-10 14:02:36,969 [19] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句SELECT 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[Description] AS [Description], 
+    [Extent1].[Name] AS [Name], 
+    [Extent1].[CreateDateTime] AS [CreateDateTime], 
+    [Extent1].[IsDeleted] AS [IsDeleted]
+    FROM [dbo].[T_Permissions] AS [Extent1]
+    WHERE 0 = [Extent1].[IsDeleted]
+2019-09-10 14:02:36,969 [19] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句
+
+2019-09-10 14:02:36,969 [19] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句-- Executing at 2019/9/10/周二 14:02:36 +08:00
+
+2019-09-10 14:02:36,970 [19] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句-- Completed in 0 ms with result: SqlDataReader
+
+2019-09-10 14:02:36,970 [19] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句
+
+2019-09-10 14:02:36,970 [19] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句Closed connection at 2019/9/10/周二 14:02:36 +08:00
+
+2019-09-10 14:02:36,970 [19] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句Opened connection at 2019/9/10/周二 14:02:36 +08:00
+
+2019-09-10 14:02:36,970 [19] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句SELECT 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[Description] AS [Description], 
+    [Extent1].[Name] AS [Name], 
+    [Extent1].[CreateDateTime] AS [CreateDateTime], 
+    [Extent1].[IsDeleted] AS [IsDeleted]
+    FROM [dbo].[T_Permissions] AS [Extent1]
+    WHERE 0 = [Extent1].[IsDeleted]
+2019-09-10 14:02:36,970 [19] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句
+
+2019-09-10 14:02:36,970 [19] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句-- Executing at 2019/9/10/周二 14:02:36 +08:00
+
+2019-09-10 14:02:36,971 [19] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句-- Completed in 0 ms with result: SqlDataReader
+
+2019-09-10 14:02:36,971 [19] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句
+
+2019-09-10 14:02:36,971 [19] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句Closed connection at 2019/9/10/周二 14:02:36 +08:00
+
+2019-09-10 14:02:36,972 [19] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句Opened connection at 2019/9/10/周二 14:02:36 +08:00
+
+2019-09-10 14:02:36,972 [19] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句SELECT 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[Description] AS [Description], 
+    [Extent1].[Name] AS [Name], 
+    [Extent1].[CreateDateTime] AS [CreateDateTime], 
+    [Extent1].[IsDeleted] AS [IsDeleted]
+    FROM [dbo].[T_Permissions] AS [Extent1]
+    WHERE 0 = [Extent1].[IsDeleted]
+2019-09-10 14:02:36,972 [19] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句
+
+2019-09-10 14:02:36,972 [19] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句-- Executing at 2019/9/10/周二 14:02:36 +08:00
+
+2019-09-10 14:02:36,973 [19] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句-- Completed in 0 ms with result: SqlDataReader
+
+2019-09-10 14:02:36,973 [19] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句
+
+2019-09-10 14:02:36,974 [19] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句Closed connection at 2019/9/10/周二 14:02:36 +08:00
+
+2019-09-10 14:02:40,837 [87] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句Opened connection at 2019/9/10/周二 14:02:40 +08:00
+
+2019-09-10 14:02:40,838 [87] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句SELECT TOP (1) 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[Name] AS [Name], 
+    [Extent1].[PhoneNum] AS [PhoneNum], 
+    [Extent1].[PasswordHash] AS [PasswordHash], 
+    [Extent1].[PasswordSalt] AS [PasswordSalt], 
+    [Extent1].[Email] AS [Email], 
+    [Extent1].[CityId] AS [CityId], 
+    [Extent1].[LoginErrorTimes] AS [LoginErrorTimes], 
+    [Extent1].[LastLoginErrorDateTime] AS [LastLoginErrorDateTime], 
+    [Extent1].[CreateDateTime] AS [CreateDateTime], 
+    [Extent1].[IsDeleted] AS [IsDeleted]
+    FROM [dbo].[T_AdminUsers] AS [Extent1]
+    WHERE (0 = [Extent1].[IsDeleted]) AND ([Extent1].[Id] = @p__linq__0)
+2019-09-10 14:02:40,838 [87] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句
+
+2019-09-10 14:02:40,838 [87] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句-- p__linq__0: '12' (Type = Int64, IsNullable = false)
+
+2019-09-10 14:02:40,838 [87] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句-- Executing at 2019/9/10/周二 14:02:40 +08:00
+
+2019-09-10 14:02:40,838 [87] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句-- Completed in 0 ms with result: SqlDataReader
+
+2019-09-10 14:02:40,838 [87] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句
+
+2019-09-10 14:02:40,838 [87] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句Closed connection at 2019/9/10/周二 14:02:40 +08:00
+
+2019-09-10 14:02:40,838 [87] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句Opened connection at 2019/9/10/周二 14:02:40 +08:00
+
+2019-09-10 14:02:40,838 [87] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句SELECT 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[Name] AS [Name], 
+    [Extent1].[CreateDateTime] AS [CreateDateTime], 
+    [Extent1].[IsDeleted] AS [IsDeleted]
+    FROM [dbo].[T_Cities] AS [Extent1]
+    WHERE [Extent1].[Id] = @EntityKeyValue1
+2019-09-10 14:02:40,838 [87] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句
+
+2019-09-10 14:02:40,839 [87] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句-- EntityKeyValue1: '6' (Type = Int64)
+
+2019-09-10 14:02:40,839 [87] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句-- Executing at 2019/9/10/周二 14:02:40 +08:00
+
+2019-09-10 14:02:40,839 [87] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句-- Completed in 0 ms with result: SqlDataReader
+
+2019-09-10 14:02:40,839 [87] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句
+
+2019-09-10 14:02:40,839 [87] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句Closed connection at 2019/9/10/周二 14:02:40 +08:00
+
+2019-09-10 14:02:40,839 [87] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句Opened connection at 2019/9/10/周二 14:02:40 +08:00
+
+2019-09-10 14:02:40,839 [87] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句SELECT 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[Name] AS [Name], 
+    [Extent1].[CreateDateTime] AS [CreateDateTime], 
+    [Extent1].[IsDeleted] AS [IsDeleted]
+    FROM [dbo].[T_Cities] AS [Extent1]
+    WHERE 0 = [Extent1].[IsDeleted]
+2019-09-10 14:02:40,839 [87] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句
+
+2019-09-10 14:02:40,840 [87] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句-- Executing at 2019/9/10/周二 14:02:40 +08:00
+
+2019-09-10 14:02:40,840 [87] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句-- Completed in 0 ms with result: SqlDataReader
+
+2019-09-10 14:02:40,840 [87] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句
+
+2019-09-10 14:02:40,840 [87] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句Closed connection at 2019/9/10/周二 14:02:40 +08:00
+
+2019-09-10 14:02:40,840 [87] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句Opened connection at 2019/9/10/周二 14:02:40 +08:00
+
+2019-09-10 14:02:40,840 [87] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句SELECT 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[Name] AS [Name], 
+    [Extent1].[CreateDateTime] AS [CreateDateTime], 
+    [Extent1].[IsDeleted] AS [IsDeleted]
+    FROM [dbo].[T_Roles] AS [Extent1]
+    WHERE 0 = [Extent1].[IsDeleted]
+2019-09-10 14:02:40,840 [87] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句
+
+2019-09-10 14:02:40,840 [87] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句-- Executing at 2019/9/10/周二 14:02:40 +08:00
+
+2019-09-10 14:02:40,841 [87] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句-- Completed in 0 ms with result: SqlDataReader
+
+2019-09-10 14:02:40,841 [87] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句
+
+2019-09-10 14:02:40,841 [87] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句Closed connection at 2019/9/10/周二 14:02:40 +08:00
+
+2019-09-10 14:02:40,841 [87] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句Opened connection at 2019/9/10/周二 14:02:40 +08:00
+
+2019-09-10 14:02:40,841 [87] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句SELECT 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[Description] AS [Description], 
+    [Extent1].[Name] AS [Name], 
+    [Extent1].[CreateDateTime] AS [CreateDateTime], 
+    [Extent1].[IsDeleted] AS [IsDeleted]
+    FROM [dbo].[T_Permissions] AS [Extent1]
+    WHERE 0 = [Extent1].[IsDeleted]
+2019-09-10 14:02:40,841 [87] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句
+
+2019-09-10 14:02:40,841 [87] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句-- Executing at 2019/9/10/周二 14:02:40 +08:00
+
+2019-09-10 14:02:40,841 [87] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句-- Completed in 0 ms with result: SqlDataReader
+
+2019-09-10 14:02:40,841 [87] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句
+
+2019-09-10 14:02:40,842 [87] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句Closed connection at 2019/9/10/周二 14:02:40 +08:00
+
+2019-09-10 14:02:40,842 [87] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句Opened connection at 2019/9/10/周二 14:02:40 +08:00
+
+2019-09-10 14:02:40,842 [87] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句SELECT 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[Description] AS [Description], 
+    [Extent1].[Name] AS [Name], 
+    [Extent1].[CreateDateTime] AS [CreateDateTime], 
+    [Extent1].[IsDeleted] AS [IsDeleted]
+    FROM [dbo].[T_Permissions] AS [Extent1]
+    WHERE 0 = [Extent1].[IsDeleted]
+2019-09-10 14:02:40,842 [87] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句
+
+2019-09-10 14:02:40,842 [87] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句-- Executing at 2019/9/10/周二 14:02:40 +08:00
+
+2019-09-10 14:02:40,842 [87] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句-- Completed in 0 ms with result: SqlDataReader
+
+2019-09-10 14:02:40,842 [87] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句
+
+2019-09-10 14:02:40,842 [87] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句Closed connection at 2019/9/10/周二 14:02:40 +08:00
+
+2019-09-10 14:02:40,843 [87] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句Opened connection at 2019/9/10/周二 14:02:40 +08:00
+
+2019-09-10 14:02:40,843 [87] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句SELECT 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[Description] AS [Description], 
+    [Extent1].[Name] AS [Name], 
+    [Extent1].[CreateDateTime] AS [CreateDateTime], 
+    [Extent1].[IsDeleted] AS [IsDeleted]
+    FROM [dbo].[T_Permissions] AS [Extent1]
+    WHERE 0 = [Extent1].[IsDeleted]
+2019-09-10 14:02:40,843 [87] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句
+
+2019-09-10 14:02:40,843 [87] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句-- Executing at 2019/9/10/周二 14:02:40 +08:00
+
+2019-09-10 14:02:40,843 [87] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句-- Completed in 0 ms with result: SqlDataReader
+
+2019-09-10 14:02:40,843 [87] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句
+
+2019-09-10 14:02:40,843 [87] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句Closed connection at 2019/9/10/周二 14:02:40 +08:00
+
+2019-09-10 14:02:40,843 [87] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句Opened connection at 2019/9/10/周二 14:02:40 +08:00
+
+2019-09-10 14:02:40,843 [87] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句SELECT 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[Description] AS [Description], 
+    [Extent1].[Name] AS [Name], 
+    [Extent1].[CreateDateTime] AS [CreateDateTime], 
+    [Extent1].[IsDeleted] AS [IsDeleted]
+    FROM [dbo].[T_Permissions] AS [Extent1]
+    WHERE 0 = [Extent1].[IsDeleted]
+2019-09-10 14:02:40,843 [87] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句
+
+2019-09-10 14:02:40,844 [87] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句-- Executing at 2019/9/10/周二 14:02:40 +08:00
+
+2019-09-10 14:02:40,844 [87] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句-- Completed in 0 ms with result: SqlDataReader
+
+2019-09-10 14:02:40,844 [87] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句
+
+2019-09-10 14:02:40,844 [87] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句Closed connection at 2019/9/10/周二 14:02:40 +08:00
+
+2019-09-10 14:02:40,844 [87] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句Opened connection at 2019/9/10/周二 14:02:40 +08:00
+
+2019-09-10 14:02:40,845 [87] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句SELECT TOP (1) 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[Name] AS [Name], 
+    [Extent1].[PhoneNum] AS [PhoneNum], 
+    [Extent1].[PasswordHash] AS [PasswordHash], 
+    [Extent1].[PasswordSalt] AS [PasswordSalt], 
+    [Extent1].[Email] AS [Email], 
+    [Extent1].[CityId] AS [CityId], 
+    [Extent1].[LoginErrorTimes] AS [LoginErrorTimes], 
+    [Extent1].[LastLoginErrorDateTime] AS [LastLoginErrorDateTime], 
+    [Extent1].[CreateDateTime] AS [CreateDateTime], 
+    [Extent1].[IsDeleted] AS [IsDeleted]
+    FROM [dbo].[T_AdminUsers] AS [Extent1]
+    WHERE (0 = [Extent1].[IsDeleted]) AND ([Extent1].[Id] = @p__linq__0)
+2019-09-10 14:02:40,845 [87] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句
+
+2019-09-10 14:02:40,845 [87] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句-- p__linq__0: '12' (Type = Int64, IsNullable = false)
+
+2019-09-10 14:02:40,845 [87] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句-- Executing at 2019/9/10/周二 14:02:40 +08:00
+
+2019-09-10 14:02:40,845 [87] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句-- Completed in 0 ms with result: SqlDataReader
+
+2019-09-10 14:02:40,845 [87] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句
+
+2019-09-10 14:02:40,845 [87] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句Closed connection at 2019/9/10/周二 14:02:40 +08:00
+
+2019-09-10 14:02:40,845 [87] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句Opened connection at 2019/9/10/周二 14:02:40 +08:00
+
+2019-09-10 14:02:40,845 [87] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句SELECT 
+    [Extent2].[Id] AS [Id], 
+    [Extent2].[Name] AS [Name], 
+    [Extent2].[CreateDateTime] AS [CreateDateTime], 
+    [Extent2].[IsDeleted] AS [IsDeleted]
+    FROM  [dbo].[T_AdminUserRoles] AS [Extent1]
+    INNER JOIN [dbo].[T_Roles] AS [Extent2] ON [Extent1].[RoleId] = [Extent2].[Id]
+    WHERE [Extent1].[AdminUserId] = @EntityKeyValue1
+2019-09-10 14:02:40,845 [87] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句
+
+2019-09-10 14:02:40,845 [87] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句-- EntityKeyValue1: '12' (Type = Int64, IsNullable = false)
+
+2019-09-10 14:02:40,846 [87] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句-- Executing at 2019/9/10/周二 14:02:40 +08:00
+
+2019-09-10 14:02:40,846 [87] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句-- Completed in 0 ms with result: SqlDataReader
+
+2019-09-10 14:02:40,846 [87] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句
+
+2019-09-10 14:02:40,846 [87] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句Closed connection at 2019/9/10/周二 14:02:40 +08:00
+
+2019-09-10 14:02:40,846 [87] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句Opened connection at 2019/9/10/周二 14:02:40 +08:00
+
+2019-09-10 14:02:40,847 [87] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句SELECT 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[Description] AS [Description], 
+    [Extent1].[Name] AS [Name], 
+    [Extent1].[CreateDateTime] AS [CreateDateTime], 
+    [Extent1].[IsDeleted] AS [IsDeleted]
+    FROM [dbo].[T_Permissions] AS [Extent1]
+    WHERE 0 = [Extent1].[IsDeleted]
+2019-09-10 14:02:40,847 [87] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句
+
+2019-09-10 14:02:40,847 [87] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句-- Executing at 2019/9/10/周二 14:02:40 +08:00
+
+2019-09-10 14:02:40,847 [87] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句-- Completed in 0 ms with result: SqlDataReader
+
+2019-09-10 14:02:40,847 [87] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句
+
+2019-09-10 14:02:40,847 [87] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句Closed connection at 2019/9/10/周二 14:02:40 +08:00
+
+2019-09-10 14:02:40,848 [87] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句Opened connection at 2019/9/10/周二 14:02:40 +08:00
+
+2019-09-10 14:02:40,848 [87] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句SELECT 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[Description] AS [Description], 
+    [Extent1].[Name] AS [Name], 
+    [Extent1].[CreateDateTime] AS [CreateDateTime], 
+    [Extent1].[IsDeleted] AS [IsDeleted]
+    FROM [dbo].[T_Permissions] AS [Extent1]
+    WHERE 0 = [Extent1].[IsDeleted]
+2019-09-10 14:02:40,848 [87] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句
+
+2019-09-10 14:02:40,848 [87] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句-- Executing at 2019/9/10/周二 14:02:40 +08:00
+
+2019-09-10 14:02:40,848 [87] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句-- Completed in 0 ms with result: SqlDataReader
+
+2019-09-10 14:02:40,848 [87] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句
+
+2019-09-10 14:02:40,848 [87] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句Closed connection at 2019/9/10/周二 14:02:40 +08:00
+
+2019-09-10 14:02:40,849 [87] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句Opened connection at 2019/9/10/周二 14:02:40 +08:00
+
+2019-09-10 14:02:40,849 [87] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句SELECT 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[Description] AS [Description], 
+    [Extent1].[Name] AS [Name], 
+    [Extent1].[CreateDateTime] AS [CreateDateTime], 
+    [Extent1].[IsDeleted] AS [IsDeleted]
+    FROM [dbo].[T_Permissions] AS [Extent1]
+    WHERE 0 = [Extent1].[IsDeleted]
+2019-09-10 14:02:40,849 [87] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句
+
+2019-09-10 14:02:40,849 [87] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句-- Executing at 2019/9/10/周二 14:02:40 +08:00
+
+2019-09-10 14:02:40,849 [87] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句-- Completed in 0 ms with result: SqlDataReader
+
+2019-09-10 14:02:40,849 [87] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句
+
+2019-09-10 14:02:40,850 [87] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句Closed connection at 2019/9/10/周二 14:02:40 +08:00
+
+2019-09-10 14:06:50,565 [67] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句Opened connection at 2019/9/10/周二 14:06:50 +08:00
+
+2019-09-10 14:06:50,565 [67] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句SELECT 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[Name] AS [Name], 
+    [Extent1].[PhoneNum] AS [PhoneNum], 
+    [Extent1].[PasswordHash] AS [PasswordHash], 
+    [Extent1].[PasswordSalt] AS [PasswordSalt], 
+    [Extent1].[Email] AS [Email], 
+    [Extent1].[CityId] AS [CityId], 
+    [Extent1].[LoginErrorTimes] AS [LoginErrorTimes], 
+    [Extent1].[LastLoginErrorDateTime] AS [LastLoginErrorDateTime], 
+    [Extent1].[CreateDateTime] AS [CreateDateTime], 
+    [Extent1].[IsDeleted] AS [IsDeleted]
+    FROM [dbo].[T_AdminUsers] AS [Extent1]
+    WHERE 0 = [Extent1].[IsDeleted]
+2019-09-10 14:06:50,565 [67] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句
+
+2019-09-10 14:06:50,565 [67] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句-- Executing at 2019/9/10/周二 14:06:50 +08:00
+
+2019-09-10 14:06:50,567 [67] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句-- Completed in 1 ms with result: SqlDataReader
+
+2019-09-10 14:06:50,567 [67] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句
+
+2019-09-10 14:06:50,567 [67] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句Closed connection at 2019/9/10/周二 14:06:50 +08:00
+
+2019-09-10 14:06:52,259 [79] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句Opened connection at 2019/9/10/周二 14:06:52 +08:00
+
+2019-09-10 14:06:52,260 [79] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句SELECT 
+    [Extent1].[LoginErrorTimes] AS [LoginErrorTimes], 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[Name] AS [Name], 
+    [Extent1].[PhoneNum] AS [PhoneNum], 
+    [Extent1].[PasswordHash] AS [PasswordHash], 
+    [Extent1].[PasswordSalt] AS [PasswordSalt], 
+    [Extent1].[Email] AS [Email], 
+    [Extent1].[CityId] AS [CityId], 
+    [Extent1].[LastLoginErrorDateTime] AS [LastLoginErrorDateTime], 
+    [Extent1].[CreateDateTime] AS [CreateDateTime], 
+    [Extent1].[IsDeleted] AS [IsDeleted], 
+    [Extent2].[Id] AS [Id1], 
+    [Extent2].[Name] AS [Name1], 
+    [Extent2].[CreateDateTime] AS [CreateDateTime1], 
+    [Extent2].[IsDeleted] AS [IsDeleted1]
+    FROM  [dbo].[T_AdminUsers] AS [Extent1]
+    LEFT OUTER JOIN [dbo].[T_Cities] AS [Extent2] ON [Extent1].[CityId] = [Extent2].[Id]
+    WHERE 0 = [Extent1].[IsDeleted]
+2019-09-10 14:06:52,260 [79] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句
+
+2019-09-10 14:06:52,260 [79] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句-- Executing at 2019/9/10/周二 14:06:52 +08:00
+
+2019-09-10 14:06:52,262 [79] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句-- Completed in 1 ms with result: SqlDataReader
+
+2019-09-10 14:06:52,262 [79] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句
+
+2019-09-10 14:06:52,262 [79] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句Closed connection at 2019/9/10/周二 14:06:52 +08:00
+
+2019-09-10 14:07:17,214 [19] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句Opened connection at 2019/9/10/周二 14:07:17 +08:00
+
+2019-09-10 14:07:17,216 [19] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句SELECT 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[Name] AS [Name], 
+    [Extent1].[PhoneNum] AS [PhoneNum], 
+    [Extent1].[PasswordHash] AS [PasswordHash], 
+    [Extent1].[PasswordSalt] AS [PasswordSalt], 
+    [Extent1].[Email] AS [Email], 
+    [Extent1].[CityId] AS [CityId], 
+    [Extent1].[LoginErrorTimes] AS [LoginErrorTimes], 
+    [Extent1].[LastLoginErrorDateTime] AS [LastLoginErrorDateTime], 
+    [Extent1].[CreateDateTime] AS [CreateDateTime], 
+    [Extent1].[IsDeleted] AS [IsDeleted]
+    FROM [dbo].[T_AdminUsers] AS [Extent1]
+    WHERE 0 = [Extent1].[IsDeleted]
+2019-09-10 14:07:17,216 [19] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句
+
+2019-09-10 14:07:17,216 [19] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句-- Executing at 2019/9/10/周二 14:07:17 +08:00
+
+2019-09-10 14:07:17,217 [19] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句-- Completed in 1 ms with result: SqlDataReader
+
+2019-09-10 14:07:17,217 [19] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句
+
+2019-09-10 14:07:17,218 [19] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句Closed connection at 2019/9/10/周二 14:07:17 +08:00
+
+2019-09-10 14:07:18,686 [19] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句Opened connection at 2019/9/10/周二 14:07:18 +08:00
+
+2019-09-10 14:07:18,687 [19] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句SELECT 
+    [Extent1].[LoginErrorTimes] AS [LoginErrorTimes], 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[Name] AS [Name], 
+    [Extent1].[PhoneNum] AS [PhoneNum], 
+    [Extent1].[PasswordHash] AS [PasswordHash], 
+    [Extent1].[PasswordSalt] AS [PasswordSalt], 
+    [Extent1].[Email] AS [Email], 
+    [Extent1].[CityId] AS [CityId], 
+    [Extent1].[LastLoginErrorDateTime] AS [LastLoginErrorDateTime], 
+    [Extent1].[CreateDateTime] AS [CreateDateTime], 
+    [Extent1].[IsDeleted] AS [IsDeleted], 
+    [Extent2].[Id] AS [Id1], 
+    [Extent2].[Name] AS [Name1], 
+    [Extent2].[CreateDateTime] AS [CreateDateTime1], 
+    [Extent2].[IsDeleted] AS [IsDeleted1]
+    FROM  [dbo].[T_AdminUsers] AS [Extent1]
+    LEFT OUTER JOIN [dbo].[T_Cities] AS [Extent2] ON [Extent1].[CityId] = [Extent2].[Id]
+    WHERE 0 = [Extent1].[IsDeleted]
+2019-09-10 14:07:18,687 [19] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句
+
+2019-09-10 14:07:18,687 [19] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句-- Executing at 2019/9/10/周二 14:07:18 +08:00
+
+2019-09-10 14:07:18,688 [19] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句-- Completed in 0 ms with result: SqlDataReader
+
+2019-09-10 14:07:18,688 [19] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句
+
+2019-09-10 14:07:18,688 [19] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句Closed connection at 2019/9/10/周二 14:07:18 +08:00
+
+2019-09-10 14:08:10,027 [23] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句Opened connection at 2019/9/10/周二 14:08:10 +08:00
+
+2019-09-10 14:08:10,027 [23] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句SELECT 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[Name] AS [Name], 
+    [Extent1].[PhoneNum] AS [PhoneNum], 
+    [Extent1].[PasswordHash] AS [PasswordHash], 
+    [Extent1].[PasswordSalt] AS [PasswordSalt], 
+    [Extent1].[Email] AS [Email], 
+    [Extent1].[CityId] AS [CityId], 
+    [Extent1].[LoginErrorTimes] AS [LoginErrorTimes], 
+    [Extent1].[LastLoginErrorDateTime] AS [LastLoginErrorDateTime], 
+    [Extent1].[CreateDateTime] AS [CreateDateTime], 
+    [Extent1].[IsDeleted] AS [IsDeleted]
+    FROM [dbo].[T_AdminUsers] AS [Extent1]
+    WHERE 0 = [Extent1].[IsDeleted]
+2019-09-10 14:08:10,027 [23] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句
+
+2019-09-10 14:08:10,027 [23] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句-- Executing at 2019/9/10/周二 14:08:10 +08:00
+
+2019-09-10 14:08:10,028 [23] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句-- Completed in 1 ms with result: SqlDataReader
+
+2019-09-10 14:08:10,028 [23] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句
+
+2019-09-10 14:08:10,029 [23] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句Closed connection at 2019/9/10/周二 14:08:10 +08:00
+
+2019-09-10 14:08:11,266 [23] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句Opened connection at 2019/9/10/周二 14:08:11 +08:00
+
+2019-09-10 14:08:11,266 [23] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句SELECT 
+    [Extent1].[LoginErrorTimes] AS [LoginErrorTimes], 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[Name] AS [Name], 
+    [Extent1].[PhoneNum] AS [PhoneNum], 
+    [Extent1].[PasswordHash] AS [PasswordHash], 
+    [Extent1].[PasswordSalt] AS [PasswordSalt], 
+    [Extent1].[Email] AS [Email], 
+    [Extent1].[CityId] AS [CityId], 
+    [Extent1].[LastLoginErrorDateTime] AS [LastLoginErrorDateTime], 
+    [Extent1].[CreateDateTime] AS [CreateDateTime], 
+    [Extent1].[IsDeleted] AS [IsDeleted], 
+    [Extent2].[Id] AS [Id1], 
+    [Extent2].[Name] AS [Name1], 
+    [Extent2].[CreateDateTime] AS [CreateDateTime1], 
+    [Extent2].[IsDeleted] AS [IsDeleted1]
+    FROM  [dbo].[T_AdminUsers] AS [Extent1]
+    LEFT OUTER JOIN [dbo].[T_Cities] AS [Extent2] ON [Extent1].[CityId] = [Extent2].[Id]
+    WHERE 0 = [Extent1].[IsDeleted]
+2019-09-10 14:08:11,266 [23] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句
+
+2019-09-10 14:08:11,266 [23] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句-- Executing at 2019/9/10/周二 14:08:11 +08:00
+
+2019-09-10 14:08:11,269 [23] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句-- Completed in 2 ms with result: SqlDataReader
+
+2019-09-10 14:08:11,269 [23] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句
+
+2019-09-10 14:08:11,270 [23] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句Closed connection at 2019/9/10/周二 14:08:11 +08:00
+
+2019-09-10 14:09:01,578 [87] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句Opened connection at 2019/9/10/周二 14:09:01 +08:00
+
+2019-09-10 14:09:01,585 [87] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句SELECT 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[Name] AS [Name], 
+    [Extent1].[Value] AS [Value], 
+    [Extent1].[CreateDateTime] AS [CreateDateTime], 
+    [Extent1].[IsDeleted] AS [IsDeleted]
+    FROM [dbo].[T_Settings] AS [Extent1]
+    WHERE 0 = [Extent1].[IsDeleted]
+2019-09-10 14:09:01,586 [87] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句
+
+2019-09-10 14:09:01,586 [87] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句-- Executing at 2019/9/10/周二 14:09:01 +08:00
+
+2019-09-10 14:09:01,670 [87] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句-- Completed in 84 ms with result: SqlDataReader
+
+2019-09-10 14:09:01,670 [87] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句
+
+2019-09-10 14:09:01,671 [87] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句Closed connection at 2019/9/10/周二 14:09:01 +08:00
+
+2019-09-10 14:13:23,995 [87] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句Opened connection at 2019/9/10/周二 14:13:23 +08:00
+
+2019-09-10 14:13:23,996 [87] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句SELECT 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[Name] AS [Name], 
+    [Extent1].[PhoneNum] AS [PhoneNum], 
+    [Extent1].[PasswordHash] AS [PasswordHash], 
+    [Extent1].[PasswordSalt] AS [PasswordSalt], 
+    [Extent1].[Email] AS [Email], 
+    [Extent1].[CityId] AS [CityId], 
+    [Extent1].[LoginErrorTimes] AS [LoginErrorTimes], 
+    [Extent1].[LastLoginErrorDateTime] AS [LastLoginErrorDateTime], 
+    [Extent1].[CreateDateTime] AS [CreateDateTime], 
+    [Extent1].[IsDeleted] AS [IsDeleted]
+    FROM [dbo].[T_AdminUsers] AS [Extent1]
+    WHERE 0 = [Extent1].[IsDeleted]
+2019-09-10 14:13:23,996 [87] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句
+
+2019-09-10 14:13:23,996 [87] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句-- Executing at 2019/9/10/周二 14:13:23 +08:00
+
+2019-09-10 14:13:23,997 [87] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句-- Completed in 1 ms with result: SqlDataReader
+
+2019-09-10 14:13:23,997 [87] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句
+
+2019-09-10 14:13:23,998 [87] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句Closed connection at 2019/9/10/周二 14:13:23 +08:00
+
+2019-09-10 14:13:25,233 [77] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句Opened connection at 2019/9/10/周二 14:13:25 +08:00
+
+2019-09-10 14:13:25,234 [77] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句SELECT 
+    [Extent1].[LoginErrorTimes] AS [LoginErrorTimes], 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[Name] AS [Name], 
+    [Extent1].[PhoneNum] AS [PhoneNum], 
+    [Extent1].[PasswordHash] AS [PasswordHash], 
+    [Extent1].[PasswordSalt] AS [PasswordSalt], 
+    [Extent1].[Email] AS [Email], 
+    [Extent1].[CityId] AS [CityId], 
+    [Extent1].[LastLoginErrorDateTime] AS [LastLoginErrorDateTime], 
+    [Extent1].[CreateDateTime] AS [CreateDateTime], 
+    [Extent1].[IsDeleted] AS [IsDeleted], 
+    [Extent2].[Id] AS [Id1], 
+    [Extent2].[Name] AS [Name1], 
+    [Extent2].[CreateDateTime] AS [CreateDateTime1], 
+    [Extent2].[IsDeleted] AS [IsDeleted1]
+    FROM  [dbo].[T_AdminUsers] AS [Extent1]
+    LEFT OUTER JOIN [dbo].[T_Cities] AS [Extent2] ON [Extent1].[CityId] = [Extent2].[Id]
+    WHERE 0 = [Extent1].[IsDeleted]
+2019-09-10 14:13:25,234 [77] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句
+
+2019-09-10 14:13:25,234 [77] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句-- Executing at 2019/9/10/周二 14:13:25 +08:00
+
+2019-09-10 14:13:25,236 [77] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句-- Completed in 2 ms with result: SqlDataReader
+
+2019-09-10 14:13:25,236 [77] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句
+
+2019-09-10 14:13:25,236 [77] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句Closed connection at 2019/9/10/周二 14:13:25 +08:00
+
+2019-09-10 16:10:32,179 [13] ERROR ZSZ.Admin.Web.App_Start.ZSZExceptionFilter - 出现未处理的异常System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 ZSZ.Admin.Web.Controllers.DefaultController.Login(AdminLogin adminLogin) 位置 E:\Desktop\掌上组\ZSZMVC\ZSZ.Admin.Web\Controllers\DefaultController.cs:行号 32
+   在 lambda_method(Closure , ControllerBase , Object[] )
+   在 System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)
+   在 System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c.<BeginInvokeSynchronousActionMethod>b__9_0(IAsyncResult asyncResult, ActionInvocation innerInvokeState)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`2.CallEndDelegate(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass11_0.<InvokeActionMethodFilterAsynchronouslyRecursive>b__0()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass11_2.<InvokeActionMethodFilterAsynchronouslyRecursive>b__2()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass7_0.<BeginInvokeActionMethodWithFilters>b__1(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_6.<BeginInvokeAction>b__4()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_1.<BeginInvokeAction>b__1(IAsyncResult asyncResult)
+2019-09-10 16:11:04,517 [13] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句Opened connection at 2019/9/10/周二 16:11:04 +08:00
+
+2019-09-10 16:11:06,317 [13] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句SELECT 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[Name] AS [Name], 
+    [Extent1].[PhoneNum] AS [PhoneNum], 
+    [Extent1].[PasswordHash] AS [PasswordHash], 
+    [Extent1].[PasswordSalt] AS [PasswordSalt], 
+    [Extent1].[Email] AS [Email], 
+    [Extent1].[CityId] AS [CityId], 
+    [Extent1].[LoginErrorTimes] AS [LoginErrorTimes], 
+    [Extent1].[LastLoginErrorDateTime] AS [LastLoginErrorDateTime], 
+    [Extent1].[CreateDateTime] AS [CreateDateTime], 
+    [Extent1].[IsDeleted] AS [IsDeleted]
+    FROM [dbo].[T_AdminUsers] AS [Extent1]
+    WHERE 0 = [Extent1].[IsDeleted]
+2019-09-10 16:11:06,318 [13] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句
+
+2019-09-10 16:11:06,318 [13] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句-- Executing at 2019/9/10/周二 16:11:06 +08:00
+
+2019-09-10 16:11:06,771 [13] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句-- Completed in 452 ms with result: SqlDataReader
+
+2019-09-10 16:11:06,771 [13] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句
+
+2019-09-10 16:11:06,818 [13] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句Closed connection at 2019/9/10/周二 16:11:06 +08:00
+
+2019-09-10 16:11:07,309 [13] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句Opened connection at 2019/9/10/周二 16:11:07 +08:00
+
+2019-09-10 16:11:07,693 [13] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句SELECT 
+    [Extent1].[LoginErrorTimes] AS [LoginErrorTimes], 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[Name] AS [Name], 
+    [Extent1].[PhoneNum] AS [PhoneNum], 
+    [Extent1].[PasswordHash] AS [PasswordHash], 
+    [Extent1].[PasswordSalt] AS [PasswordSalt], 
+    [Extent1].[Email] AS [Email], 
+    [Extent1].[CityId] AS [CityId], 
+    [Extent1].[LastLoginErrorDateTime] AS [LastLoginErrorDateTime], 
+    [Extent1].[CreateDateTime] AS [CreateDateTime], 
+    [Extent1].[IsDeleted] AS [IsDeleted], 
+    [Extent2].[Id] AS [Id1], 
+    [Extent2].[Name] AS [Name1], 
+    [Extent2].[CreateDateTime] AS [CreateDateTime1], 
+    [Extent2].[IsDeleted] AS [IsDeleted1]
+    FROM  [dbo].[T_AdminUsers] AS [Extent1]
+    LEFT OUTER JOIN [dbo].[T_Cities] AS [Extent2] ON [Extent1].[CityId] = [Extent2].[Id]
+    WHERE 0 = [Extent1].[IsDeleted]
+2019-09-10 16:11:07,693 [13] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句
+
+2019-09-10 16:11:07,693 [13] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句-- Executing at 2019/9/10/周二 16:11:07 +08:00
+
+2019-09-10 16:11:08,264 [13] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句-- Completed in 569 ms with result: SqlDataReader
+
+2019-09-10 16:11:08,264 [13] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句
+
+2019-09-10 16:11:08,293 [13] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句Closed connection at 2019/9/10/周二 16:11:08 +08:00
+
+2019-09-10 16:16:18,924 [8] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句Opened connection at 2019/9/10/周二 16:16:18 +08:00
+
+2019-09-10 16:16:18,925 [8] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句SELECT 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[Name] AS [Name], 
+    [Extent1].[PhoneNum] AS [PhoneNum], 
+    [Extent1].[PasswordHash] AS [PasswordHash], 
+    [Extent1].[PasswordSalt] AS [PasswordSalt], 
+    [Extent1].[Email] AS [Email], 
+    [Extent1].[CityId] AS [CityId], 
+    [Extent1].[LoginErrorTimes] AS [LoginErrorTimes], 
+    [Extent1].[LastLoginErrorDateTime] AS [LastLoginErrorDateTime], 
+    [Extent1].[CreateDateTime] AS [CreateDateTime], 
+    [Extent1].[IsDeleted] AS [IsDeleted]
+    FROM [dbo].[T_AdminUsers] AS [Extent1]
+    WHERE 0 = [Extent1].[IsDeleted]
+2019-09-10 16:16:18,925 [8] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句
+
+2019-09-10 16:16:18,925 [8] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句-- Executing at 2019/9/10/周二 16:16:18 +08:00
+
+2019-09-10 16:16:18,935 [8] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句-- Completed in 9 ms with result: SqlDataReader
+
+2019-09-10 16:16:18,935 [8] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句
+
+2019-09-10 16:16:18,935 [8] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句Closed connection at 2019/9/10/周二 16:16:18 +08:00
+
+2019-09-10 16:16:19,513 [24] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句Opened connection at 2019/9/10/周二 16:16:19 +08:00
+
+2019-09-10 16:16:19,514 [24] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句SELECT 
+    [Extent1].[LoginErrorTimes] AS [LoginErrorTimes], 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[Name] AS [Name], 
+    [Extent1].[PhoneNum] AS [PhoneNum], 
+    [Extent1].[PasswordHash] AS [PasswordHash], 
+    [Extent1].[PasswordSalt] AS [PasswordSalt], 
+    [Extent1].[Email] AS [Email], 
+    [Extent1].[CityId] AS [CityId], 
+    [Extent1].[LastLoginErrorDateTime] AS [LastLoginErrorDateTime], 
+    [Extent1].[CreateDateTime] AS [CreateDateTime], 
+    [Extent1].[IsDeleted] AS [IsDeleted], 
+    [Extent2].[Id] AS [Id1], 
+    [Extent2].[Name] AS [Name1], 
+    [Extent2].[CreateDateTime] AS [CreateDateTime1], 
+    [Extent2].[IsDeleted] AS [IsDeleted1]
+    FROM  [dbo].[T_AdminUsers] AS [Extent1]
+    LEFT OUTER JOIN [dbo].[T_Cities] AS [Extent2] ON [Extent1].[CityId] = [Extent2].[Id]
+    WHERE 0 = [Extent1].[IsDeleted]
+2019-09-10 16:16:19,514 [24] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句
+
+2019-09-10 16:16:19,514 [24] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句-- Executing at 2019/9/10/周二 16:16:19 +08:00
+
+2019-09-10 16:16:19,522 [24] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句-- Completed in 8 ms with result: SqlDataReader
+
+2019-09-10 16:16:19,522 [24] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句
+
+2019-09-10 16:16:19,523 [24] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句Closed connection at 2019/9/10/周二 16:16:19 +08:00
+
+2019-09-10 16:24:11,310 [32] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句Opened connection at 2019/9/10/周二 16:24:11 +08:00
+
+2019-09-10 16:24:11,310 [32] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句SELECT 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[Name] AS [Name], 
+    [Extent1].[PhoneNum] AS [PhoneNum], 
+    [Extent1].[PasswordHash] AS [PasswordHash], 
+    [Extent1].[PasswordSalt] AS [PasswordSalt], 
+    [Extent1].[Email] AS [Email], 
+    [Extent1].[CityId] AS [CityId], 
+    [Extent1].[LoginErrorTimes] AS [LoginErrorTimes], 
+    [Extent1].[LastLoginErrorDateTime] AS [LastLoginErrorDateTime], 
+    [Extent1].[CreateDateTime] AS [CreateDateTime], 
+    [Extent1].[IsDeleted] AS [IsDeleted]
+    FROM [dbo].[T_AdminUsers] AS [Extent1]
+    WHERE 0 = [Extent1].[IsDeleted]
+2019-09-10 16:24:11,310 [32] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句
+
+2019-09-10 16:24:11,310 [32] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句-- Executing at 2019/9/10/周二 16:24:11 +08:00
+
+2019-09-10 16:24:11,344 [32] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句-- Completed in 33 ms with result: SqlDataReader
+
+2019-09-10 16:24:11,344 [32] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句
+
+2019-09-10 16:24:11,345 [32] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句Closed connection at 2019/9/10/周二 16:24:11 +08:00
+
+2019-09-10 16:24:11,813 [38] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句Opened connection at 2019/9/10/周二 16:24:11 +08:00
+
+2019-09-10 16:24:11,813 [38] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句SELECT 
+    [Extent1].[LoginErrorTimes] AS [LoginErrorTimes], 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[Name] AS [Name], 
+    [Extent1].[PhoneNum] AS [PhoneNum], 
+    [Extent1].[PasswordHash] AS [PasswordHash], 
+    [Extent1].[PasswordSalt] AS [PasswordSalt], 
+    [Extent1].[Email] AS [Email], 
+    [Extent1].[CityId] AS [CityId], 
+    [Extent1].[LastLoginErrorDateTime] AS [LastLoginErrorDateTime], 
+    [Extent1].[CreateDateTime] AS [CreateDateTime], 
+    [Extent1].[IsDeleted] AS [IsDeleted], 
+    [Extent2].[Id] AS [Id1], 
+    [Extent2].[Name] AS [Name1], 
+    [Extent2].[CreateDateTime] AS [CreateDateTime1], 
+    [Extent2].[IsDeleted] AS [IsDeleted1]
+    FROM  [dbo].[T_AdminUsers] AS [Extent1]
+    LEFT OUTER JOIN [dbo].[T_Cities] AS [Extent2] ON [Extent1].[CityId] = [Extent2].[Id]
+    WHERE 0 = [Extent1].[IsDeleted]
+2019-09-10 16:24:11,813 [38] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句
+
+2019-09-10 16:24:11,814 [38] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句-- Executing at 2019/9/10/周二 16:24:11 +08:00
+
+2019-09-10 16:24:11,815 [38] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句-- Completed in 1 ms with result: SqlDataReader
+
+2019-09-10 16:24:11,816 [38] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句
+
+2019-09-10 16:24:11,816 [38] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句Closed connection at 2019/9/10/周二 16:24:11 +08:00
+
+2019-09-10 17:29:21,543 [68] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句Opened connection at 2019/9/10/周二 17:29:21 +08:00
+
+2019-09-10 17:29:22,862 [68] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句SELECT 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[Name] AS [Name], 
+    [Extent1].[PhoneNum] AS [PhoneNum], 
+    [Extent1].[PasswordHash] AS [PasswordHash], 
+    [Extent1].[PasswordSalt] AS [PasswordSalt], 
+    [Extent1].[Email] AS [Email], 
+    [Extent1].[CityId] AS [CityId], 
+    [Extent1].[LoginErrorTimes] AS [LoginErrorTimes], 
+    [Extent1].[LastLoginErrorDateTime] AS [LastLoginErrorDateTime], 
+    [Extent1].[CreateDateTime] AS [CreateDateTime], 
+    [Extent1].[IsDeleted] AS [IsDeleted]
+    FROM [dbo].[T_AdminUsers] AS [Extent1]
+    WHERE 0 = [Extent1].[IsDeleted]
+2019-09-10 17:29:22,862 [68] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句
+
+2019-09-10 17:29:22,862 [68] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句-- Executing at 2019/9/10/周二 17:29:22 +08:00
+
+2019-09-10 17:29:23,359 [68] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句-- Completed in 496 ms with result: SqlDataReader
+
+2019-09-10 17:29:23,359 [68] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句
+
+2019-09-10 17:29:23,390 [68] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句Closed connection at 2019/9/10/周二 17:29:23 +08:00
+
+2019-09-10 17:29:40,040 [68] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句Opened connection at 2019/9/10/周二 17:29:40 +08:00
+
+2019-09-10 17:29:40,041 [68] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句SELECT 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[Name] AS [Name], 
+    [Extent1].[PhoneNum] AS [PhoneNum], 
+    [Extent1].[PasswordHash] AS [PasswordHash], 
+    [Extent1].[PasswordSalt] AS [PasswordSalt], 
+    [Extent1].[Email] AS [Email], 
+    [Extent1].[CityId] AS [CityId], 
+    [Extent1].[LoginErrorTimes] AS [LoginErrorTimes], 
+    [Extent1].[LastLoginErrorDateTime] AS [LastLoginErrorDateTime], 
+    [Extent1].[CreateDateTime] AS [CreateDateTime], 
+    [Extent1].[IsDeleted] AS [IsDeleted]
+    FROM [dbo].[T_AdminUsers] AS [Extent1]
+    WHERE 0 = [Extent1].[IsDeleted]
+2019-09-10 17:29:40,041 [68] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句
+
+2019-09-10 17:29:40,041 [68] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句-- Executing at 2019/9/10/周二 17:29:40 +08:00
+
+2019-09-10 17:29:40,116 [68] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句-- Completed in 75 ms with result: SqlDataReader
+
+2019-09-10 17:29:40,116 [68] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句
+
+2019-09-10 17:29:40,117 [68] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句Closed connection at 2019/9/10/周二 17:29:40 +08:00
+
+2019-09-10 17:29:40,119 [68] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句Opened connection at 2019/9/10/周二 17:29:40 +08:00
+
+2019-09-10 17:29:40,137 [68] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句SELECT 
+    [Extent1].[LoginErrorTimes] AS [LoginErrorTimes], 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[Name] AS [Name], 
+    [Extent1].[PhoneNum] AS [PhoneNum], 
+    [Extent1].[PasswordHash] AS [PasswordHash], 
+    [Extent1].[PasswordSalt] AS [PasswordSalt], 
+    [Extent1].[Email] AS [Email], 
+    [Extent1].[CityId] AS [CityId], 
+    [Extent1].[LastLoginErrorDateTime] AS [LastLoginErrorDateTime], 
+    [Extent1].[CreateDateTime] AS [CreateDateTime], 
+    [Extent1].[IsDeleted] AS [IsDeleted], 
+    [Extent2].[Id] AS [Id1], 
+    [Extent2].[Name] AS [Name1], 
+    [Extent2].[CreateDateTime] AS [CreateDateTime1], 
+    [Extent2].[IsDeleted] AS [IsDeleted1]
+    FROM  [dbo].[T_AdminUsers] AS [Extent1]
+    LEFT OUTER JOIN [dbo].[T_Cities] AS [Extent2] ON [Extent1].[CityId] = [Extent2].[Id]
+    WHERE 0 = [Extent1].[IsDeleted]
+2019-09-10 17:29:40,137 [68] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句
+
+2019-09-10 17:29:40,137 [68] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句-- Executing at 2019/9/10/周二 17:29:40 +08:00
+
+2019-09-10 17:29:40,475 [68] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句-- Completed in 338 ms with result: SqlDataReader
+
+2019-09-10 17:29:40,475 [68] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句
+
+2019-09-10 17:29:40,478 [68] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句Closed connection at 2019/9/10/周二 17:29:40 +08:00
+
+2019-09-10 17:29:41,020 [65] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句Opened connection at 2019/9/10/周二 17:29:41 +08:00
+
+2019-09-10 17:29:41,020 [65] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句SELECT 
+    [Extent1].[LoginErrorTimes] AS [LoginErrorTimes], 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[Name] AS [Name], 
+    [Extent1].[PhoneNum] AS [PhoneNum], 
+    [Extent1].[PasswordHash] AS [PasswordHash], 
+    [Extent1].[PasswordSalt] AS [PasswordSalt], 
+    [Extent1].[Email] AS [Email], 
+    [Extent1].[CityId] AS [CityId], 
+    [Extent1].[LastLoginErrorDateTime] AS [LastLoginErrorDateTime], 
+    [Extent1].[CreateDateTime] AS [CreateDateTime], 
+    [Extent1].[IsDeleted] AS [IsDeleted], 
+    [Extent2].[Id] AS [Id1], 
+    [Extent2].[Name] AS [Name1], 
+    [Extent2].[CreateDateTime] AS [CreateDateTime1], 
+    [Extent2].[IsDeleted] AS [IsDeleted1]
+    FROM  [dbo].[T_AdminUsers] AS [Extent1]
+    LEFT OUTER JOIN [dbo].[T_Cities] AS [Extent2] ON [Extent1].[CityId] = [Extent2].[Id]
+    WHERE 0 = [Extent1].[IsDeleted]
+2019-09-10 17:29:41,020 [65] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句
+
+2019-09-10 17:29:41,041 [65] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句-- Executing at 2019/9/10/周二 17:29:41 +08:00
+
+2019-09-10 17:29:41,042 [65] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句-- Completed in 0 ms with result: SqlDataReader
+
+2019-09-10 17:29:41,042 [65] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句
+
+2019-09-10 17:29:41,042 [65] DEBUG ZSZ.Service.MyContext - EF开始执行sql语句Closed connection at 2019/9/10/周二 17:29:41 +08:00
+
