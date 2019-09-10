@@ -44,12 +44,6 @@
         <div class="row cl">
             <label class="form-label col-3"><span class="c-red">*</span>城市：</label>
             <div class="formControls col-5">
-                @*<select name="CityId" class="input-text">
-                    @for (int i = 0; i < Model.City.Length; i++)
-                    {
-                        <option selected="@(@Convert.ToInt64(@Model.GetCity.CityId)==@Model.City[i].Id) " value="@Model.City[i].Id">@Model.City[i].Name</option>
-                    }
-                </select>*@
                 @Html.DropDownList("CityId", new SelectList(@Model.City, "Id", "Name", @Model.GetCity.CityId), new { @class = "input-text" })
             </div>
             <div class="col-4"> </div>
