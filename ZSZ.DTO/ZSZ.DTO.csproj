@@ -44,8 +44,11 @@
     <Compile Include="AdminUserDTO.cs" />
     <Compile Include="BaseDTO.cs" />
     <Compile Include="CityDTO.cs" />
+    <Compile Include="CommunityDTO.cs" />
+    <Compile Include="HouseDTO.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="PermissionDTO.cs" />
+    <Compile Include="RegionDTO.cs" />
     <Compile Include="RoleDTO.cs" />
     <Compile Include="SettingDTO.cs" />
   </ItemGroup>

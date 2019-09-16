@@ -218,5 +218,19 @@ namespace ZSZ.Service
                 return a.Id;
             }
         }
+        public bool HasPermission(long AdminId,string Permission)
+        {
+            using (MyContext my = new MyContext())
+            {
+                BaseService<AdminUserEntity> user = new BaseService<AdminUserEntity>(my);
+                var data = user.GetById(AdminId);
+                if (data == null)
+                {
+                    throw new ArgumentException("找不到id=" + AdminId + "的用户");
+                }
+
+                return data.Roles.SelectMany(m => m.Permissions).Any(m => m.Name==Permission);
+            }
+        }
     }
 }

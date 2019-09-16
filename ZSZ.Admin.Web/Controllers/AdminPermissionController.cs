@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using ZSZ.Admin.Web.Models;
+using ZSZ.Admin.Web.App_Start;
 using ZSZ.DTO;
 using ZSZ.IService;
 using ZSZ.Service;
@@ -26,6 +27,7 @@ namespace ZSZ.Admin.Web.Controllers
         {
             return View();
         }
+        [CheckPermission("增加权限")]
         [HttpPost]
         public ActionResult Add(PermissionAdd p)
         {
@@ -47,6 +49,7 @@ namespace ZSZ.Admin.Web.Controllers
             }
         }
         //删除权限
+        [CheckPermission("删除权限")]
         [HttpPost]
         public ActionResult Delete(long id)
         {

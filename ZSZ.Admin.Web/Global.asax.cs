@@ -21,6 +21,8 @@ namespace ZSZ.Admin.Web
             log4net.Config.XmlConfigurator.Configure();
             //增加自定义异常处理
             GlobalFilters.Filters.Add(new ZSZExceptionFilter());
+            IAdminUserService userService =
+                   DependencyResolver.Current.GetService<IAdminUserService>();
             //全角转半角字符串
             ModelBinders.Binders.Add(typeof(string), new TrimAndDBCModelBinder());
             //全角转半角整数数字

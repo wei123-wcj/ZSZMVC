@@ -15,6 +15,7 @@ namespace ZSZ.IService
         long GetPhoneUpdate(string PhoneNum);
         bool GetPhoneAdd(string PhoneNum);
         bool MarkDeleted(long id);
+        bool HasPermission(long AdminId, string Permission);
         void Insert(string name,string PhoneNum,string Pwd,string Email,long? CityId,long[] RoleId);
         void Update(long id,string name, string PhoneNum, string Pwd, string Email, long? CityId, long[] RoleId);
     }

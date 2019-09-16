@@ -45,6 +45,9 @@
                                 layer.msg('添加成功!', { icon: 1, time: 1000 });
                                 window.parent.location.reload();
                             }
+                           else if(res.Data != null){
+                                 window.parent.location.reload();
+                            }
                             else {
                                 layer.msg('添加失败!', { icon: 2, time: 1000 });
                             }

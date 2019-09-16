@@ -44,7 +44,10 @@
     <Compile Include="IAdminUserLogin.cs" />
     <Compile Include="IAdminUserService.cs" />
     <Compile Include="ICityService.cs" />
+    <Compile Include="ICommunityService.cs" />
+    <Compile Include="IHouseService.cs" />
     <Compile Include="IPermissionService.cs" />
+    <Compile Include="IRegionService.cs" />
     <Compile Include="IRoleService.cs" />
     <Compile Include="IServiceSupport.cs" />
     <Compile Include="ISettingService.cs" />
